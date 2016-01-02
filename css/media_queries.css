@@ -1,0 +1,481 @@
+/*-------------------MEDIA QUERIES---------------------*/
+
+@media (min-width: 200px) and (max-width: 680px) {
+
+  .img-buttons {
+    margin-right: -20px;
+  }
+
+  #footer-press {
+    margin-top: 35%;
+  }
+
+  img.img-responsive {
+    margin-left: 14% !important;
+    height: 45em;
+    width: auto;
+    overflow: scroll;
+  }
+
+  .solo-main-container {
+    margin-left: -20px;
+  }
+
+  .solo.container.words {
+    margin-left: 15px;
+  }
+
+  .about-words {
+    margin-top: -70px;
+    padding-right: 0;
+		margin-right: -3% !important;
+  }
+
+  #main-img {
+    margin-left: 2px !important;
+    margin-top: -30%;
+  }
+
+	.contact-form {
+		padding-left: 6%; 
+	}
+
+}
+
+@media (min-width: 761px) and (max-width: 990px) {
+	p.about-words {
+		margin-right: 40%;
+	}
+}
+
+}
+
+@media (min-width: 280px) and (max-width: 980px) {
+  .solo.container.words {
+    margin-top: 550px;
+    float: left;
+    height: auto;
+    width: auto;
+    z-index: -3;
+  }
+
+  .solo-main-container {
+    z-index: 2;
+  }
+
+  #solo-title, .solo-head h4 {
+    width: 100%;
+    margin-left: 4%;
+  }
+
+  #solo-title {
+    font-size: 35px;
+    margin-top: -40px;
+  }
+}
+
+@media screen (min-width: 200px) and (max-width: 765px) {
+
+  #main-container {
+    margin-left: 50px;
+  }
+
+ }
+
+ @media (min-width: 600px) and (max-width: 991px) {
+   .about-words {
+     margin-top: -70px;
+   }
+ }
+
+ @media (max-width: 500px) {
+
+   #main-img {
+     margin-left: -20px;
+     margin-bottom: 0px;
+     -webkit-transform: scale(180%);
+     transform: scale(180%);
+   }
+
+ }
+
+ @media (min-width: 995px) {
+   div.clay {
+     margin-left: 80px;
+   }
+ }
+
+ @media (min-width: 927px) {
+   footer {
+     margin-top: -95px;
+   }
+
+   #clay-footer {
+     width: 100%;
+     margin-left: -10px;
+   }
+
+   #main-container {
+     margin-left: 30px;
+   }
+
+ }
+
+  @media (max-width: 991px) {
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+   .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+
+    #ceramic-artist {
+      font-size: 35px !important;
+    }
+
+    #footer-press {
+      margin-top: 30%;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 980px) {
+
+  #main-img {
+    width: 103%;
+  }
+
+}
+
+@media (max-width: 539px) {
+  #d_solo_pic_1, #d_solo_pic_2{
+    margin-left: 5%;
+  }
+
+  #d_solo_pic_3 {
+    margin-left: 15%;
+  }
+
+  #d_solo_pic_4 {
+    margin-left: 20%;
+  }
+
+  #d_solo_pic_5 {
+    margin-left: 20%;
+    margin-bottom: 40px;
+  }
+
+  .design-solo-info, .design-solo-title {
+    margin-left: -200px;
+  }
+
+  .design-solo-title {
+    font-size: 27px;
+  }
+
+  .design-solo-info {
+    font-size: 15px;
+  }
+
+  .design-solo-para {
+    width: 80%;
+    margin-left: -60px;
+  }
+
+  div.design-div {
+    background-color: white !important;
+  }
+
+  div.design-div dd {
+    color: black !important;
+    font-size: 12px;
+  }
+
+  .design-para-black {
+    color: black;
+  }
+
+  img.down-black {
+    margin-top: 140px !important;
+  }
+}
+
+
+@media (max-height: 600px) {
+
+  .down-white {
+    margin-top: 90vh !important;
+  }
+
+  #contact-area textarea {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 760px) {
+
+  .about.container.words {
+    width: 700px;
+    margin-left: -340px;
+    text-align: center;
+  }
+
+  .img-rounded {
+    margin-left: 35px;
+  }
+
+  #social-list {
+    margin-left: 16.5% !important;
+  }
+
+  div.modal-body {
+    margin-left: -100px !important;
+    height: 480px;
+  }
+
+  div.design-div dt{
+    font-size: 28px;
+  }
+
+  div.design-div dd {
+    font-size: 20px;
+  }
+
+  .design-para-white, .design-para-black {
+    font-size: 2.5vw;
+  }
+
+}
+
+@media (max-width: 900px) {
+  #headline {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1050px) {
+
+  #clay-container{
+    margin-left: 3em;
+  }
+}
+
+@media (min-width: 700px) {
+  .solo-head.spiky {
+    margin-left: 300px;
+  }
+}
+
+@media (min-width: 1050px) {
+  #clay-container {
+    margin-left: 9em !important;
+  }
+}
+
+/*****IPHONE MEDIA QUERIES*********/
+
+/******************************PORTRAIT******************************************/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (-webkit-device-pixel-ratio: 2)
+and (orientation : portrait) {
+
+  #main-img {
+    height: 55vh;
+    margin-left: -70px;
+    width: auto;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  #headline, #brooke-h1, #ceramic-artist, #pipe {
+    overflow: hidden;
+    visibility: visible;
+    font-size: 18px !important;
+    margin-bottom: 100px;
+  }
+
+  #solo-primary {
+    margin-top: -190px;
+  }
+
+  #footer-index {
+    margin-top: 0px;
+  }
+
+  .img-buttons {
+    height:130px;
+    width: 100px;
+  }
+
+  .solo.container.words#solo-words {
+    margin-top: 360px;
+    margin-bottom: 40px;
+  }
+
+
+/********DESIGN NIGHTMARE**********/
+
+  .design-div {
+    height: 800px;
+  }
+
+  #monk-exhibitionist {
+    margin-top: 150px;
+  }
+
+
+
+/********DESIGN SOLO NIGHTMARE**********/
+  header > #d_solo_head  > div.navbar-header {
+    height: 100px;
+  }
+
+  .project-img-group {
+    margin-right: -200px !important;
+  }
+
+  .project-img-group img {
+    height: 40px;
+  }
+
+  #tall_room p {
+    margin-bottom: 150px;
+  }
+
+  .design-solo-title {
+    font-size: 29px;
+    margin-left: -75px;
+  }
+
+  .design-solo-info {
+    font-size: 17px;
+    margin-left: -75px;
+  }
+
+
+  /**About**/
+  .about.container.words p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 190px;
+  }
+
+  .about.container.img {
+    margin-left: 260px;
+    margin-bottom: -30px;
+    margin-top: 150px;
+  }
+
+
+}
+
+
+/*********************************LANDSCAPE*************************************************/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {
+
+
+}
+
+/*************IPHONE 6 PLUS**************/
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+
+}
+
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  {
+
+	#somerville, #tall_room {
+		height: 1000px;
+	}
+
+	section#monk_exhibitionist {
+		height: 1000px;
+		background-color: black;
+	}
+
+	#somerville > .#bbd_logo{
+		margin-left: -90px !important;
+	}
+
+	ul.project-img-group {
+		margin-right: -2% !important;
+	}
+	div.design-solo-words {
+		margin-left: 4%;
+	}
+	div.solo.container.words {
+		margin-left: 40% !important;
+		padding-right: 40%;
+	}
+
+	.spiky {
+		margin-left: 15% !important;
+	}
+
+	#solo-title {
+		font-size: 3.0vw;
+	}
+
+	/*.pieces-header img{
+		margin-left: -310% !important;
+	}*/
+
+	.solo-head h4 {
+		font-size: 1.8vw;
+	}
+
+section.solo.container {
+	margin-left: 0% !important;
+}
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)  {
+
+	.down-black, .down-white {
+		visibility: hidden;
+	}
+
+
+
+
+}
