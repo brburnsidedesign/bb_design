@@ -32,7 +32,6 @@
   }
 
   #main-img-div {
-    margin-left: 2px !important;
 		background-size: contain;
   }
 
@@ -54,14 +53,13 @@
 
 @media (min-width: 200px) and (max-width: 500px) {
 	#main-img-div {
-		margin-left: 2px !important;
 		margin-top: -80%;
 		background-size: contain;
 	}
 
-	#footer-index {
+	/*#footer-index {
 		margin-top: -50%;
-	}
+	}*/
 }
 
 @media (min-width: 280px) and (max-width: 980px) {
@@ -111,7 +109,6 @@
  @media (max-width: 500px) {
 
    #main-img-div {
-     margin-left: -20px;
      -webkit-transform: scale(180%);
      transform: scale(180%);
    }
@@ -183,9 +180,9 @@
 
 @media (min-width: 480px) and (max-width: 980px) {
 
-  #main-img-div {
+  /*#main-img-div {
     width: 103%;
-  }
+  }*/
 
 }
 
@@ -325,7 +322,6 @@ and (orientation : portrait) {
 
   #main-img-div {
     height: 55vh;
-    margin-left: -70px;
     width: auto;
     margin-bottom: 40px;
     overflow: hidden;
