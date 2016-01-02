@@ -122,6 +122,19 @@ h1 {
   width: 100%;
 }
 
+#main-img-div {
+	height: 800px;
+	width: auto;
+	background-image: url("../img/firstloop1.jpg");
+	background-size: cover;
+	background-position: center;
+	margin-left: -5%;
+	margin-top: -10%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+  z-index: 0;
+}
+
 #main-img {
   margin-top: -200px;
   margin-left: 0%;
@@ -145,7 +158,7 @@ footer {
 
 #footer-index {
   font-size: 10px;
-  margin-top: -5%;
+  margin-top: 5%;
 }
 
 
