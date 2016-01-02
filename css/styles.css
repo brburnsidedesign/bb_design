@@ -133,8 +133,9 @@ h1 {
 
 footer {
    position: fixed;
+	 visibility: visible;
    left: 0px;
-	 margin-bottom: 0%;
+	 margin-bottom: 3%;
    bottom: 0px;
    height: 30px;
    width: 100%;
