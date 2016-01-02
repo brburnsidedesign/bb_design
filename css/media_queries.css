@@ -51,16 +51,6 @@
 	}
 }
 
-@media (min-width: 200px) and (max-width: 500px) {
-	#main-img-div {
-		margin-top: -80%;
-		background-size: contain;
-	}
-
-	/*#footer-index {
-		margin-top: -50%;
-	}*/
-}
 
 @media (min-width: 280px) and (max-width: 980px) {
   .solo.container.words {
