@@ -160,10 +160,6 @@
         display: block!important;
     }
 
-    #ceramic-artist {
-      font-size: 35px !important;
-    }
-
     #footer-press {
       margin-top: 30%;
     }
@@ -317,8 +313,7 @@ and (orientation : portrait) {
 
   #headline, #brooke-h1, #ceramic-artist, #pipe {
     overflow: hidden;
-    visibility: visible;
-    font-size: 18px !important;
+    visibility: hidden;
     margin-bottom: 100px;
   }
 
@@ -397,8 +392,9 @@ and (orientation : portrait) {
 /*********************************LANDSCAPE*************************************************/
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {
-
-
+	#main-img-div > img {
+		margin-top: -10%;
+	}
 }
 
 /*************IPHONE 6 PLUS**************/

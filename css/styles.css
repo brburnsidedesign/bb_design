@@ -93,7 +93,6 @@ header {
 	margin-top: 70%;
   visibility: visible;
   margin-left: -20px;
-	overflow: hidden;
 }
 
 
@@ -101,20 +100,20 @@ header {
   font-family: 'Josefin Slab', serif;
   font-weight: bold;
   margin-left: 2em;
-	font-size: 5vh;
+	font-size: 3.2vw;
 }
 
 #pipe {
   font-family: 'Josefin Slab', serif;
   font-weight: 300;
   color: deepskyblue;
-	font-size: 6vh;
+	font-size: 3.2vw;
 }
 
 #ceramic-artist {
   font-family: 'Josefin Slab', serif;
   font-weight: 100;
-	font-size: 6vh;
+	font-size: 3.2vw;
 }
 
 
@@ -128,7 +127,6 @@ header {
 	margin-left: -3%;
 	margin-top: -15%;
 	background-repeat: no-repeat;
-	overflow: noscroll;
 }
 
 footer {
@@ -714,4 +712,9 @@ dd {
 	height: 500px;
 	width: auto;
 	float: left;
+}
+
+input.form, textarea.form {
+	box-shadow: none;
+	border: 1px solid black;
 }
