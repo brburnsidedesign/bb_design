@@ -376,11 +376,12 @@ and (orientation : portrait) {
   .about.container.words p {
     font-size: 25px;
     text-align: center;
-    margin-top: 190px;
+    margin-top: -1%;
+		margin-right: -1% !important;
   }
 
   .about.container.img {
-    margin-left: 260px;
+    margin-left: -3%;
     margin-bottom: -30px;
     margin-top: 150px;
   }
@@ -395,6 +396,21 @@ and (orientation : portrait) {
 	#main-img-div > img {
 		margin-top: -50%;
 	}
+
+	/**About**/
+  .about.container.words p {
+    font-size: 20px;
+		float: right;
+    text-align: center;
+    margin-top: -75%;
+		margin-right: -50% !important;
+  }
+
+	.about.container.img {
+		margin-left: -4%;
+	}
+
+
 }
 
 /*************IPHONE 6 PLUS**************/
