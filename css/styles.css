@@ -270,12 +270,12 @@ footer {
   clear: none;
 }
 
-#solo-primary.taller img{
+.solo-primary.taller img{
   height: 55vh;
   width: auto;
 }
 
-#solo-primary.wider img{
+.solo-primary.wider img{
   height: 350px;
   width: auto;
 }
@@ -330,11 +330,12 @@ footer {
 
 .modal-backdrop {
   z-index: -1;
+	overflow-y: scroll;
 }
 
 .modal-body img{
-  margin-top: -40px;
-  margin-left: 8%;
+  margin-top: 0px;
+  margin-left: 3%;
   height: auto;
   width: 100%;
 }

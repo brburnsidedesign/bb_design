@@ -317,7 +317,7 @@ and (orientation : portrait) {
     margin-bottom: 100px;
   }
 
-  #solo-primary {
+  .solo-primary {
     margin-top: -190px;
   }
 
@@ -330,6 +330,22 @@ and (orientation : portrait) {
     margin-top: 360px;
     margin-bottom: 40px;
   }
+
+	.solo-head {
+		margin-top: 80%;
+	}
+
+	.solo-primary {
+		margin-top: 0%;
+	}
+
+	.solo-head.spiky {
+		margin-top: 130%;
+	}
+
+	.modal-body img{
+		margin-top: -30px;
+	}
 
 
 /********DESIGN NIGHTMARE**********/
@@ -371,6 +387,10 @@ and (orientation : portrait) {
     margin-left: -75px;
   }
 
+	img.down-black, img.down-white {
+		visibility: hidden;
+	}
+
 
   /**About**/
   .about.container.words p {
@@ -397,17 +417,8 @@ and (orientation : portrait) {
 		margin-top: -50%;
 	}
 
-	/**About**/
-  .about.container.words p {
-    font-size: 20px;
-		float: right;
-    text-align: center;
-    margin-top: -75%;
-		margin-right: -50% !important;
-  }
-
-	.about.container.img {
-		margin-left: -4%;
+	img.down-black, img.down-white {
+		visibility: hidden;
 	}
 
 
