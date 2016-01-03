@@ -95,6 +95,9 @@ header {
   margin-left: -20px;
 }
 
+#main-container {
+	height: auto;
+}
 
 #brooke-h1 {
   font-family: 'Josefin Slab', serif;
@@ -116,9 +119,8 @@ header {
 	font-size: 3.2vw;
 }
 
-
 #main-img-div {
-	height: 1200px;
+	height: 720px;
 	max-width: 110%;
 	background-image: url("../img/firstloop1.jpg");
 	background-size: cover;
@@ -127,26 +129,6 @@ header {
 	margin-left: -3%;
 	margin-top: -15%;
 	background-repeat: no-repeat;
-}
-
-footer {
-   position: fixed;
-	 visibility: visible;
-   left: 0px;
-	 margin-bottom: 3%;
-   bottom: 0px;
-   height: 30px;
-   width: 100%;
-   background: white;
-	 font-family: 'Work Sans', sans-serif;
-   font-size: 10px;
-   font-weight: 200;
-   text-align: center;
-	 background-color: transparent;
-}
-
-#footer-index {
-  font-size: 10px;
 }
 
 
@@ -700,22 +682,44 @@ dd {
 
 .contact-form {
 	position: fixed;
-	margin-top: 15%;
-	margin-left: 0%;
+	margin-top: 14%;
+	margin-left: 3%;
 	padding-left: 50%;
 	float: right;
+	overflow: scroll;
 }
 
 #contact-pic img{
-	margin-top: 8%;
-	margin-left: 5%;
+	margin-top: 10%;
+	margin-left: 2%;
 	margin-bottom: 5%;
-	height: 500px;
+	height: 450px;
 	width: auto;
 	float: left;
+	border: solid lightgrey 0.5px;
 }
 
 input.form, textarea.form {
 	box-shadow: none;
 	border: 1px solid black;
+}
+
+footer {
+   position: fixed;
+	 visibility: visible;
+   left: 0px;
+	 margin-bottom: 1%;
+   bottom: 0px;
+   height: 30px;
+   width: 100%;
+   background: white;
+	 font-family: 'Work Sans', sans-serif;
+   font-size: 10px;
+   font-weight: 200;
+   text-align: center;
+	 background-color: transparent;
+}
+
+footer#footer {
+  font-size: 10px;
 }

@@ -6,10 +6,6 @@
     margin-right: -20px;
   }
 
-  #footer-press {
-    margin-top: 35%;
-  }
-
   img.img-responsive {
     margin-left: 14% !important;
     height: 45em;
@@ -43,7 +39,7 @@
 
 @media (min-width: 761px) and (max-width: 990px) {
 	p.about-words {
-		margin-right: 40%;
+		margin-right: 50%;
 	}
 
 }
@@ -108,11 +104,6 @@
  }
 
  @media (min-width: 927px) {
-   footer {
-     background-color: white;
-		 height: 13px;
-		 margin-bottom: 0%;
-   }
 
    #clay-footer {
      width: 100%;
@@ -362,6 +353,9 @@ and (orientation : portrait) {
     margin-top: 150px;
   }
 
+	.down-black, .down-white {
+		visibility: hidden;
+	}
 
 
 /********DESIGN SOLO NIGHTMARE**********/
