@@ -120,7 +120,7 @@ header {
 }
 
 #main-img-div {
-	height: 720px;
+	height: 755px;
 	max-width: 110%;
 	background-image: url("../img/firstloop1.jpg");
 	background-size: cover;
@@ -416,6 +416,7 @@ dd {
 }
 
 .design-pic {
+	visbility: visible;
   height: 350px;
   width: 245px;
   margin-top: 90px;
@@ -611,11 +612,10 @@ dd {
 	text-align: center;
   color: grey;
   float: right;
-  width: 55%;
+  width: 50%;
   margin-top: -470px;
-  margin-right: -40px;
   padding-right: 70px;
-  padding-left: 20px;
+  padding-left: 5px;
 }
 
 

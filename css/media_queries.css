@@ -101,6 +101,10 @@
    div.clay {
      margin-left: 80px;
    }
+
+	 .about-words {
+		 width: 60%;
+	 }
  }
 
  @media (min-width: 927px) {
@@ -349,12 +353,21 @@ and (orientation : portrait) {
     height: 800px;
   }
 
+	dl {
+		margin-left: 5% !important;
+		margin-right: -10% !important;
+	}
+
   #monk-exhibitionist {
     margin-top: 150px;
   }
 
 	.down-black, .down-white {
 		visibility: hidden;
+	}
+
+	.design-pic {
+
 	}
 
 
@@ -419,6 +432,14 @@ and (orientation : portrait) {
 		visibility: hidden;
 	}
 
+	.solo-head {
+		margin-top: -70px;
+	}
+
+	.solo-head.spiky {
+		margin-top: 80px;
+	}
+
 
 }
 
@@ -470,10 +491,6 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 	#solo-title {
 		font-size: 3.0vw;
 	}
-
-	/*.pieces-header img{
-		margin-left: -310% !important;
-	}*/
 
 	.solo-head h4 {
 		font-size: 1.8vw;
