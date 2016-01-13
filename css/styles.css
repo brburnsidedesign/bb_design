@@ -90,9 +90,10 @@ header {
 /*-----------------------INDEX------------------------------*/
 
 #headline {
-	margin-top: 70%;
+	margin-top: 60px;
   visibility: visible;
   margin-left: -20px;
+	position: fixed;
 }
 
 #main-container {
@@ -120,15 +121,21 @@ header {
 }
 
 #main-img-div {
-	height: 755px;
-	max-width: 110%;
+	display: inline-block;
+	width: 103%;
+	vertical-align: middle;
+	background-size: 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 	background-image: url("../img/firstloop1.jpg");
+	height: 900px;
+	max-height: 1400px;
+	overflow-y: hidden;
+	max-width: 120%;
 	background-size: cover;
-	background-position: center center;
 	background-attachment: fixed;
 	margin-left: -3%;
 	margin-top: -15%;
-	background-repeat: no-repeat;
 }
 
 
