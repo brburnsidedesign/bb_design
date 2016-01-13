@@ -27,10 +27,6 @@
 		margin-right: -3% !important;
   }
 
-  #main-img-div {
-		background-size: contain;
-  }
-
 	.contact-form {
 		padding-left: 6%;
 	}
@@ -109,9 +105,6 @@
 		 width: 60%;
 	 }
 
-	 /*#headline {
-		 top: -30% !important;
-	 }*/
  }
 
  @media (min-width: 927px) {
@@ -124,10 +117,6 @@
    #main-container {
      margin-left: 30px;
    }
-
-	 /*#headline {
-		 margin-top: 6%;
-	 }*/
 
  }
 
@@ -165,10 +154,6 @@
     #footer-press {
       margin-top: 30%;
     }
-/*
-		#headline {
-			margin-top: 8%;
-		}*/
 
 }
 
@@ -272,12 +257,6 @@
 
 }
 
-@media (max-width: 900px) {
-  /*#headline {
-    visibility: hidden;
-  }*/
-}
-
 @media (min-width: 800px) and (max-width: 1050px) {
 
   #clay-container{
@@ -310,17 +289,11 @@ and (orientation : portrait) {
 		height: auto;
 	}
 
-  #main-img-div {
+  /*#main-img-div {
     height: 55vh;
     width: auto;
     margin-bottom: 40px;
     overflow: hidden;
-  }
-
-  /*#headline, #brooke-h1, #ceramic-artist, #pipe {
-    overflow: hidden;
-    visibility: hidden;
-    margin-bottom: 100px;
   }*/
 
   .solo-primary {
@@ -431,9 +404,6 @@ and (orientation : portrait) {
 /*********************************LANDSCAPE*************************************************/
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {
-	#main-img-div > img {
-		margin-top: -50%;
-	}
 
 	img.down-black, img.down-white {
 		visibility: hidden;
@@ -519,16 +489,4 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 		visibility: hidden;
 	}
 
-}
-
-@media screen and (max-height: 590px) {
-	/*#headline {
-		visibility: hidden;
-	}*/
-}
-
-@media screen and (max-width: 1200px) {
-	/*#headline h1{
-		margin-top: -50% !important;
-	}*/
 }
