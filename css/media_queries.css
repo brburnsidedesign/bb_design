@@ -222,6 +222,13 @@
   }
 }
 
+@media (max-width: 600px) {
+
+	#main-img-div {
+		background-size: contain;
+	}
+}
+
 @media (max-width: 760px) {
 
   .about.container.words {
@@ -289,12 +296,9 @@ and (orientation : portrait) {
 		height: auto;
 	}
 
-  /*#main-img-div {
-    height: 55vh;
-    width: auto;
-    margin-bottom: 40px;
-    overflow: hidden;
-  }*/
+	/*#main-img-div {
+		background-size: contain;
+	}*/
 
   .solo-primary {
     margin-top: -190px;
@@ -305,13 +309,14 @@ and (orientation : portrait) {
     width: 100px;
   }
 
-  .solo.container.words#solo-words {
-    margin-top: 360px;
-    margin-bottom: 40px;
-  }
+	.solo.container.words.long {
+		top: -30%;
+		margin-bottom: 60%;
+	}
 
-	.solo-head {
-		margin-top: 80%;
+	.x-long {
+		top: -45%;
+		margin-bottom: 60%;
 	}
 
 	.solo-primary {
