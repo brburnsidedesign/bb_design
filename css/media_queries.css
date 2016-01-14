@@ -502,3 +502,32 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 	}
 
 }
+
+
+/******************IPAD MINI**********************/
+
+		/************Portrait*****************/
+
+		@media only screen
+		and (min-device-width : 768px)
+		and (max-device-width : 1024px)
+		and (orientation : portrait)
+		and (-webkit-min-device-pixel-ratio: 1)  {
+
+			#main-img-div {
+				background-size: contain;
+			}
+
+			.img-rounded {
+				margin-left: 10px;
+			}
+
+			#social-list{
+				margin-left: 52px !important;
+			}
+
+			p.about-words {
+				margin-top: -470px;
+			}
+
+		}
