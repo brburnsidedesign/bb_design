@@ -19,6 +19,12 @@ html {
   background-color: white;
 }
 
+body {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+
 a:active {
   background-color: deepskyblue;
 }
@@ -128,7 +134,7 @@ header {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-image: url("../img/firstloop1.jpg");
-	height: 900px;
+	height: 1200px;
 	max-height: 1400px;
 	overflow-y: hidden;
 	max-width: 120%;
