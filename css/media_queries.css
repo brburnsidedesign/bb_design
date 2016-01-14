@@ -297,7 +297,8 @@ and (orientation : portrait) {
 	}
 
 	#main-img-div {
-		top: 30% !important;
+		height: 700px;
+		bottom: 40% !important;
 	}
 
   .solo-primary {
@@ -402,6 +403,12 @@ and (orientation : portrait) {
     margin-top: 150px;
   }
 
+	/*CONTACT*/
+
+	#contact-container {
+		margin-top: 15%;
+			height: 150%;
+	}
 
 }
 
