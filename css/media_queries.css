@@ -296,9 +296,9 @@ and (orientation : portrait) {
 		height: auto;
 	}
 
-	/*#main-img-div {
-		background-size: contain;
-	}*/
+	#main-img-div {
+		top: 30% !important;
+	}
 
   .solo-primary {
     margin-top: -190px;
