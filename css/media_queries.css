@@ -496,9 +496,9 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 		font-size: 1.8vw;
 	}
 
-section.solo.container {
-	margin-left: 0% !important;
-}
+	section.solo.container {
+		margin-left: 0% !important;
+	}
 
 }
 
@@ -571,3 +571,54 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 
 
 		}
+
+
+
+/******************MASSIVE SCREEN**********************/
+
+/************2560 x 2560*****************/
+
+@media only screen
+and (min-device-width : 2560px)
+and (max-device-width : 4060px)
+{
+	#main-img-div {
+		width: 2560px;
+		height: auto;
+	 background-image: url(../images/sandpiperBG.jpg);
+	 background-position:center center;
+	 background-repeat:no-repeat;
+	 -moz-background-size:cover;
+	 -webkit-background-size:cover;
+	 background-size:cover;
+	}
+
+	header {
+		width: 120% !important;
+	}
+}
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+	#main-img-div {
+		background-size: contain;
+		height: 1024px !important;
+	}
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+	#main-img-div {
+		background-size: contain;
+		height: 1024px !important;
+	}
+
+}

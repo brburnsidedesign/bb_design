@@ -138,7 +138,9 @@ header {
 	max-height: 1920px;
 	overflow-y: hidden;
 	max-width: 120%;
-	background-size: cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	background-size:cover;
 	background-attachment: fixed;
 	margin-left: -3%;
 	margin-top: -15%;
