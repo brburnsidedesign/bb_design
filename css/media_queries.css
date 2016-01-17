@@ -352,10 +352,6 @@ and (orientation : portrait) {
 		visibility: hidden;
 	}
 
-	.design-pic {
-
-	}
-
 
 /********DESIGN SOLO NIGHTMARE**********/
   header > #d_solo_head  > div.navbar-header {
@@ -543,6 +539,32 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 
 			p.about-words {
 				margin-top: -470px !important;
+			}
+
+		}
+
+/******************IPHONE 5**********************/
+
+/************Portrait*****************/
+
+		@media only screen
+		and (min-device-width : 320px)
+		and (max-device-width : 568px)
+		and (orientation : portrait) {
+
+			#main-img-div {
+				background-size: contain;
+			}
+
+		}
+
+		@media only screen
+		and (min-device-width : 320px)
+		and (max-device-width : 568px)
+		and (orientation : landscape) {
+
+			#main-img-div {
+				background-size: contain;
 			}
 
 		}
