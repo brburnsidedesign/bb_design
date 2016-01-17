@@ -394,11 +394,11 @@ and (orientation : portrait) {
     font-size: 25px;
     text-align: center;
     margin-top: -1%;
-		margin-right: 5px !important;
+		margin-right: -45px !important;
   }
 
   .about.container.img {
-    margin-left: -3%;
+    margin-left: 12%;
     margin-bottom: -30px;
     margin-top: 90px;
   }
