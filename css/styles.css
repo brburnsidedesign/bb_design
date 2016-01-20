@@ -720,8 +720,7 @@ input.form, textarea.form {
 }
 
 footer {
-   position: fixed;
-	 visibility: visible;
+	position: fixed;
    left: 0px;
 	 margin-bottom: 1%;
    bottom: 0px;

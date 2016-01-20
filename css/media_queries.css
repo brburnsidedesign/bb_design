@@ -579,22 +579,24 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 /************2560 x 2560*****************/
 
 @media only screen
-and (min-device-width : 2560px)
+and (min-device-width : 1980px)
 and (max-device-width : 4060px)
 {
 	#main-img-div {
-		width: 2560px;
-		height: auto;
-	 background-image: url(../images/sandpiperBG.jpg);
-	 background-position:center center;
-	 background-repeat:no-repeat;
-	 -moz-background-size:cover;
-	 -webkit-background-size:cover;
-	 background-size:cover;
-	}
+		min-width: 100%;
+  	min-height: 100%;
+  }
 
 	header {
 		width: 120% !important;
+	}
+
+	html {
+	  background: url(images/bg.jpg) no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 	}
 }
 
@@ -618,7 +620,7 @@ and (orientation : landscape) {
 
 	#main-img-div {
 		background-size: contain;
-		height: 1024px !important;
+		height: 600px !important;
 	}
 
 }
