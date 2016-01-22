@@ -695,17 +695,17 @@ dd {
   margin-left: 80px;
 }
 
-#foxyform_embed_link_706677 {
-	display: none;
-}
-
-.contact-form {
+.contact-now {
 	position: fixed;
-	margin-top: 14%;
 	margin-left: 3%;
+	margin-top: 15%;
 	padding-left: 50%;
 	float: right;
 	overflow: scroll;
+}
+
+#foxyform_embed_link_706677 {
+	display: none;
 }
 
 #contact-pic img{
