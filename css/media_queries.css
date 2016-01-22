@@ -27,7 +27,8 @@
 		margin-right: -3% !important;
   }
 
-	.contact-form {
+	.contact-now {
+		clear: left;
 		margin-left: 0%;
 		padding-left: 6%;
 	}

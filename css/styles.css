@@ -169,7 +169,7 @@ header {
   text-align: center;
 }
 
-.row .col-md-4.portfolio-item {
+.row .portfolio-item {
   display: inline-block;
   margin: auto .5em 2em 2.3em;
   position: relative;
@@ -697,11 +697,8 @@ dd {
 
 .contact-now {
 	position: fixed;
-	margin-left: 3%;
 	margin-top: 15%;
-	padding-left: 50%;
-	float: right;
-	overflow: scroll;
+	margin-left: 50%;
 }
 
 #foxyform_embed_link_706677 {
