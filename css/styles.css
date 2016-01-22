@@ -721,20 +721,19 @@ input.form, textarea.form {
 }
 
 footer {
-	position: fixed;
-   left: 0px;
-	 margin-bottom: 1%;
-   bottom: 0px;
-   height: 30px;
-   width: 100%;
-   background: white;
-	 font-family: 'Work Sans', sans-serif;
-   font-size: 10px;
-   font-weight: 200;
-   text-align: center;
-	 background-color: transparent;
-}
-
-footer#footer {
+	clear: both;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+  height: 30px;
+  width: 100%;
+  background: white;
+	font-family: 'Work Sans', sans-serif;
   font-size: 10px;
+  font-weight: 200;
+  text-align: center;
+	background-color: transparent;
+	z-index: -4;
 }
