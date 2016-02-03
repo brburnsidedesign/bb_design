@@ -96,6 +96,10 @@
      transform: scale(180%);
    }
 
+	 #contact-pic img {
+		 margin-left:-15px;
+	 }
+
  }
 
  @media (min-width: 995px) {

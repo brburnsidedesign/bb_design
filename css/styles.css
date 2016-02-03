@@ -703,16 +703,14 @@ dd {
 }
 
 #contact-pic img{
-	margin-bottom: 2%;
+	margin-bottom: 0%;
 	height: 30em;
-	float: left;
 	border: none;
 }
 
 footer {
-	clear: both;
 	position: absolute;
-	width: 100%;
+	margin-top: 10%;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
@@ -724,5 +722,4 @@ footer {
   font-weight: 200;
   text-align: center;
 	background-color: transparent;
-	z-index: -4;
 }
