@@ -15,7 +15,7 @@
 
 		<h1>Your message has been sent!</h1><br />
 
-		<p><a href="../contact.html">Back to Contact Form</a></p>
+		<p><a href="../contact_1.html">Back to Contact Form</a></p>
 
 	</div>
 

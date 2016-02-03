@@ -690,34 +690,23 @@ dd {
 
 /***********************CONTACT*********************************/
 
-#page-wrap {
-  margin-top: 80px;
-  margin-left: 80px;
+#contact-container {
+	margin-top: 10%;
 }
 
 .contact-now {
-	position: fixed;
-	margin-top: 15%;
-	margin-left: 50%;
-}
-
-#foxyform_embed_link_706677 {
-	display: none;
+	margin-top: 10%;
+	font-family:'Roboto Condensed';
+  font-weight: 100;
+	font-size: 20px;
+	margin-bottom: 10%;
 }
 
 #contact-pic img{
-	margin-top: 10%;
-	margin-left: 2%;
-	margin-bottom: 5%;
-	height: 450px;
-	width: auto;
+	margin-bottom: 2%;
+	height: 30em;
 	float: left;
-	border: solid lightgrey 0.5px;
-}
-
-input.form, textarea.form {
-	box-shadow: none;
-	border: 1px solid black;
+	border: none;
 }
 
 footer {
