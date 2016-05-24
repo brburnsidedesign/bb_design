@@ -1,0 +1,79 @@
+<div id="design-main">
+  <section id="somerville">
+    <div class="design-div" style="background-color:white;height:680px;width:100%">
+      <a ui-sref="somerville"><img id="fc1" class="design-pic" src="build/assets/img/film_center_main.jpg" alt="" /></a>
+      <a><img class="down-black" src="build/assets/img/down-black.png" alt="" /></a>
+      <dl>
+          <a ui-sref="somerville" class="project-title"><dt>SOMERVILLE FILM CENTER</dt></a>
+          <dd>Harvard University Graduate School of Design<br>Career Discovery Summer 2013</dd>
+          <dd>Critic: Laura Haak</dd>
+          <br>
+          <p class="design-para-white">
+            The proposed site of this project currently houses a beautiful and rustic flower shop, which is a welcome respite in an area surrounded by loud traffic and congestion. After visiting this site at the beginning of this project, the following aims were immediately established: to maintain this sense of open air and to avoid, at all costs, contributing to the claustrophobia created by the busy road. As this project required spatial allocation for wide variety of activities and that a number of circulation paths be choreographed, pursuing these goals proved to be a fascinating challenge.&nbsp;&nbsp;&nbsp;<a ui-sref="somerville"><br>[MORE...]</a>
+          </p>
+      </dl>
+    </div>
+  </section>
+
+  <section id="monk_exhibitionist">
+    <div class="design-div" style="background-color:black;height:680px;width:100%">
+      <a ui-sref="monk"><img id="me1" class="design-pic" src="build/assets/img/monk_main.jpg" alt="" /></a>
+      <a><img class="down-white" src="build/assets/img/down-white.png" alt="" /></a>
+      <dl>
+          <a ui-sref="monk" class="project-title"><dt>THE MONK AND THE EXHIBITIONIST</dt></a>
+          <dd style="color:white">Harvard University Graduate School of Design<br>Career Discovery Summer 2013</dd>
+          <dd style="color:white">Critic: Laura Haak</dd>
+          <br>
+          <p class="design-para-black">
+          The two clients for this dual-residence were a “reclusive monk” and a “prudent exhibitionist.” Though seemingly opposites and extremely unlikely neighbors, their qualities as implied through their titles played quite formally on the public and the private. Again, strategically utilizing openings and enclosures in the development of this space left room for the possibility of brief interaction between the two clients, while also facilitating opportunities for the acts of seeing and being seen.&nbsp;&nbsp;&nbsp;<a ui-sref="monk"><br>[MORE...]</a>
+          </p>
+      </dl>
+    </div>
+  </section>
+
+  <section id="tall_room">
+    <div class="design-div" style="background-color:white;height:650px;width:100%">
+      <a ui-sref="tall_room"><img id="tr1" class="design-pic tall-room" src="build/assets/img/tall_room.jpg" alt="" /></a>
+      <dl>
+          <a ui-sref="tall_room" class="project-title"><dt>THE TALL ROOM</dt></a>
+          <dd>Harvard University Graduate School of Design<br>Career Discovery Summer 2013</dd>
+          <dd>Critic: Laura Haak</dd>
+          <br>
+          <p class="design-para-white">
+            This project initiated the exploration of the spatial dynamics and functional potential of the shape of the box. The challenge became about using this simple shape to create the possibility for this tall room to be incredibly fun and social, while also allowing for enough division for practical spaces such as a museum bookstore. The shape of the box had to contain and house, but also entice.
+            <br>
+            <br>
+            Inspired by minimalist sculpture from artists such as Dan Graham and Walter De Maria were very present in the line of thinking. Using De Maria’s work in particular as a mental precedent, led to experimenting with choreographing the space of the Tall Room, (which must be traversed to get to the Long Room) through what I called “benign obstructions” - objects that don’t necessarily obstruct but demand being walked around. &nbsp;&nbsp;&nbsp;<a ui-sref="tall_room"><br>[MORE...]</a>
+          </p>
+      </dl>
+    </div>
+  </section>
+</div>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var divs = $('.down-black');
+      var divs2 = $('.down-white');
+      $(window).scroll(function() {
+        $(divs).css({
+          'opacity' : .3-(($(this).scrollTop())/800)
+        });
+        $('#profile').css({
+          'opacity' : 0+(($(this).scrollTop())/540)
+        });
+      });
+    });
+
+    $(document).ready(function() {
+      $('.down-black').on('click', function() {
+        $('html, body').animate({
+          scrollTop: $("#monk_exhibitionist").offset().top
+        }, 700);
+      });
+      $('.down-white').on('click', function() {
+        $('html, body').animate({
+          scrollTop: $("#tall_room").offset().top
+        }, 700);
+      });
+   });
+  </script>

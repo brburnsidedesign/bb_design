@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="bbDesign">
+  <head>
+    <meta charset="utf-8">
+    <title>BROOKE BURNSIDE DESIGN</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="ceramics,art,fine-art,Austin,Bahamas,UT,architecture">
+		<meta name="author" content="Will Barbee">
+		<meta name="description" content="Portfolio site for Brooke Burnside, Ceramic Artist and Designer">
+
+		<!-- build:css styles/css/app.min.css -->
+		<link rel="stylesheet" href="./styles/css/styles.css">
+		<link rel="stylesheet" href="./styles/css/reset.css">
+		<link rel="stylesheet" href="./styles/css/media_queries.css">
+		<!-- endbuild -->
+
+		<!-- build:css libs/libs.min.css -->
+		<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css">
+		<link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="../bower_components/toastr/toastr.min.css">
+		<link rel="stylesheet" href="./styles/css/animate.css">
+		<!-- endbuild -->
+
+  </head>
+  <body ng-controller="MainCtrl">
+
+		<ng-include src="'./views/layout/navbar.html'"></ng-include>
+
+		<div ui-view ng-animate="'view'"></div>
+
+
+			<!-- build:js libs/libs.min.js -->
+			<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+			<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+			<script type="text/javascript" src="../bower_components/angular-animate/angular-animate.min.js"></script>
+			<script type="text/javascript" src="../bower_components/angular-aria/angular-aria.min.js"></script>
+			<script type="text/javascript" src="../bower_components/angular-material/angular-material.min.js"></script>
+			<script type="text/javascript" src="../bower_components/toastr/toastr.min.js"></script>
+			<script type="text/javascript" src="../bower_components/angular-messages/angular-messages.min.js"></script>
+			<script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+			<script type="text/javascript" src="../bower_components/angular-animate/angular-animate.min.js"></script>
+			<script type="text/javascript" src="../bower_components/angular-scroll/angular-scroll.min.js"></script>
+			<!-- endbuild -->
+
+			<!-- build:js js/app.min.js -->
+			<script type="text/javascript" src="./js/app.module.js"></script>
+			<script type="text/javascript" src="./js/MainCtrl.js"></script>
+			<!-- endbuild -->
+
+			<script src="js/jquery-1.8.2.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('.navbar-toggle').click(function(){
+						$('navbar-left, navbar-right').css('text-align: center !important;')
+					});
+				});
+			</script>
+
+    </body>
+  </html>
