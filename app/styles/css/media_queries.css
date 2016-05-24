@@ -295,6 +295,12 @@
 	}
 }
 
+@media (min-height: 800px) {
+	#main-img-div {
+		height: 2000px !important;
+	}
+}
+
 /*****IPHONE MEDIA QUERIES*********/
 
 /******************************PORTRAIT******************************************/
