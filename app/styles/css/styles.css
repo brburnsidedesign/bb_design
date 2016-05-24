@@ -610,6 +610,7 @@ dd {
 #contact-container {
   margin-top: 10%; }
   #contact-container div footer {
+    animation-delay: 2s;
     position: absolute;
     left: 0px;
     right: 0px;
