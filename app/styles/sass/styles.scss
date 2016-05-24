@@ -108,8 +108,7 @@ header {
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   background-color: transparent;
   color: deepskyblue !important;
-  font-weight: bolder;
-  text-decoration: underline;
+  text-decoration: none !important;
 }
 
 .navbar-brand #logo{

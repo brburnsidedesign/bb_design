@@ -1,7 +1,7 @@
 app.controller('MainCtrl', ['$scope', '$state', '$location', '$http', function($scope, $state, $location, $http) {
 }]);
 
-angular.module('app').run(function($rootScope) {
+app.run(function($rootScope) {
 	$rootScope.$on('$viewContentLoaded',function($viewContentLoaded){
     	jQuery('html, body').animate({ scrollTop: 0 }, 300);
   	});

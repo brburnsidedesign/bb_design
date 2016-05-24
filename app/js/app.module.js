@@ -1,4 +1,4 @@
-var app = angular.module('bbDesign', ['ui.router', 'duScroll', 'ngMaterial', 'ngAnimate']);
+var app = angular.module('bbDesign', ['ui.router', 'ngMaterial', 'ngAnimate']);
 
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
