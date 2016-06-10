@@ -39,7 +39,8 @@ html {
 body {
   height: 100%;
   width: 100%;
-  overflow: auto; }
+  overflow: auto;
+  margin: 0; }
 
 a:active {
   background-color: deepskyblue; }
@@ -129,6 +130,7 @@ header {
   background-repeat: no-repeat;
   background-image: url("../../assets/img/firstloop1.jpg");
   height: 1000px;
+  max-height: 2000px;
   overflow-y: hidden !important;
   max-width: 120%;
   -moz-background-size: cover;
@@ -335,7 +337,8 @@ header {
       color: darkgrey; }
 
 .design-div {
-  width: 100%; }
+  width: 100%;
+  height: 100vh; }
 
 #fc1 {
   height: 325px; }
@@ -366,9 +369,9 @@ header {
   position: absolute;
   height: 50px;
   width: 61px;
-  margin-top: 540px !important;
+  margin-top: 54em !important;
   margin-right: 47.00% !important;
-  right: 0;
+  right: 2em;
   margin: 0 auto; }
 
 .down-black:hover, .down-white:hover {
@@ -387,11 +390,11 @@ dt, dd, .design-para {
   font-family: 'Lato', sans-serif; }
 
 dd {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 300; }
 
 .design-para-white, .design-para-black {
-  font-size: 2.3vh;
+  font-size: 16px;
   font-weight: 300;
   width: 80%; }
 
@@ -513,7 +516,7 @@ dd {
 
 /************************ABOUT***********************************/
 .about.container {
-  margin-top: 90px;
+  margin-top: 12em;
   float: left;
   display: block; }
   .about.container ul {
@@ -554,7 +557,7 @@ dd {
 .about-words {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 2.5vh;
+  font-size: 1.2em;
   line-height: 27px;
   text-align: center;
   color: grey;

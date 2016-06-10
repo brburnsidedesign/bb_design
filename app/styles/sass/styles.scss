@@ -52,6 +52,7 @@ body {
 	height: 100%;
 	width: 100%;
 	overflow: auto;
+	margin: 0;
 }
 
 a:active {
@@ -421,6 +422,7 @@ header {
 
 .design-div {
   width: 100%;
+	height: 100vh;
 }
 
 #fc1 {
@@ -456,9 +458,9 @@ header {
   position: absolute;
   height: 50px;
   width: 61px;
-  margin-top: 540px !important;
+  margin-top: 54em !important;
   margin-right: 47.00% !important;
-  right: 0;
+  right: 2em;
   margin: 0 auto;
 }
 
@@ -482,13 +484,13 @@ dt, dd, .design-para {
 }
 
 dd {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 300;
 }
 
 
 .design-para-white, .design-para-black {
-  font-size: 2.3vh;
+  font-size: 16px;
   font-weight: 300;
   width: 80%;
 }
@@ -646,7 +648,7 @@ dd {
 /************************ABOUT***********************************/
 
 .about.container {
-  margin-top: 90px;
+  margin-top: 12em;
   float: left;
   display: block;
 	ul {
@@ -696,7 +698,7 @@ dd {
 .about-words {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 2.5vh;
+  font-size: 1.2em;
 	line-height: 27px;
 	text-align: center;
   color: grey;
