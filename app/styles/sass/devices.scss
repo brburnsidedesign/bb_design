@@ -58,6 +58,7 @@ $browser-context: 16; // Default
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
 
 	.project-individual-sections {
+		overflow-x: hidden !important;
 		.black-section {
 			overflow-x: hidden !important;
 		}
