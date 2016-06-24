@@ -34,11 +34,11 @@
   .mdl-grid {
     margin-left: -0.75em !important; }
   .about-main-view {
-    overflow-x: hidden; }
+    overflow-x: hidden !important; }
     .about-main-view .row {
-      overflow-x: hidden; }
+      overflow-x: hidden !important; }
       .about-main-view .row div {
-        overflow-x: hidden; }
+        overflow-x: hidden !important; }
         .about-main-view .row div .about-image {
           margin-left: -2em !important;
           margin-top: -2em !important; }

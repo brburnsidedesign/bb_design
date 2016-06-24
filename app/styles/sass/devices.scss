@@ -79,11 +79,11 @@ $browser-context: 16; // Default
 	}
 
 	.about-main-view {
-		overflow-x: hidden;
+		overflow-x: hidden !important;
 		.row {
-			overflow-x: hidden;
+			overflow-x: hidden !important;
 			div {
-				overflow-x: hidden;
+				overflow-x: hidden !important;
 				.about-text {
 				}
 				.about-image {
