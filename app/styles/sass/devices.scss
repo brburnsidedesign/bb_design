@@ -56,6 +56,17 @@ $browser-context: 16; // Default
 
 //iPhone 6
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+
+	.project-individual-sections {
+		.black-section {
+			overflow-x: hidden !important;
+		}
+		.white-section {
+			overflow-x: hidden !important;
+		}
+	}
+
+
 	.clay-main-view {
 		.row {
 			margin-left: -1.5em;
@@ -76,6 +87,32 @@ $browser-context: 16; // Default
 			.col-xs-12.design-box {
 				margin-left: 0.75em !important;
 				margin-top: 3em !important;
+			}
+		}
+	}
+
+	.contact-info {
+		.right-info {
+			p {
+				font-size: em(18);
+			}
+		}
+		.left-info {
+			height: 20em !important;
+			p {
+				width: 90% !important;
+				margin-right: 0em !important;
+			}
+		}
+		.right-info {
+			height: 18em !important;
+			p {
+				width: 90% !important;
+				margin-left: 0em !important;
+			}
+			#social-icons {
+				margin-top: 4.75em !important;
+				margin-left: -1.25em !important;
 			}
 		}
 	}
