@@ -33,9 +33,15 @@
     margin-left: -1.5em; }
   .mdl-grid {
     margin-left: -0.75em !important; }
-  .about-image {
-    margin-left: -2em !important;
-    margin-top: -2em !important; }
+  .about-main-view {
+    overflow-x: hidden; }
+    .about-main-view .row {
+      overflow-x: hidden; }
+      .about-main-view .row div {
+        overflow-x: hidden; }
+        .about-main-view .row div .about-image {
+          margin-left: -2em !important;
+          margin-top: -2em !important; }
   .design-main-view .row .col-xs-12.design-box {
     margin-left: 0.75em !important;
     margin-top: 3em !important; }

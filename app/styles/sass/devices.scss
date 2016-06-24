@@ -78,10 +78,23 @@ $browser-context: 16; // Default
 		margin-left: -0.75em !important;
 	}
 
-	.about-image {
-		margin-left: -2em !important;
-		margin-top: -2em !important;
+	.about-main-view {
+		overflow-x: hidden;
+		.row {
+			overflow-x: hidden;
+			div {
+				overflow-x: hidden;
+				.about-text {
+				}
+				.about-image {
+					margin-left: -2em !important;
+					margin-top: -2em !important;
+				}
+			}
+		}
 	}
+
+
 
 	.design-main-view {
 		.row {
