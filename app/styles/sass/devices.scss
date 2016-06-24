@@ -79,6 +79,7 @@ $browser-context: 16; // Default
 	}
 
 	.about-main-view {
+		height: auto !important;
 		overflow-x: hidden !important;
 		.row {
 			overflow-x: hidden !important;
@@ -87,8 +88,10 @@ $browser-context: 16; // Default
 				.about-text {
 				}
 				.about-image {
-					margin-left: -2em !important;
-					margin-top: -2em !important;
+					width: 100vw !important;
+					margin-left: -1em !important;
+					margin-top: -1em !important;
+					margin-bottom: 0em !important;
 				}
 			}
 		}
