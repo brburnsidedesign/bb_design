@@ -1,0 +1,21 @@
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+
+@media (min-width: em(767)) and (max-width: em(991)) {
+};
+
+@media (min-width: em(991)) and (max-width: em(1200)) {
+};
+
+@media (min-width: em(1200)) and (max-width: em(1300)) {
+};
+
+@media (min-width: em(1300)) and (max-width: em(1600)) {
+};
+
+@media (min-width: em(1600)) {
+};

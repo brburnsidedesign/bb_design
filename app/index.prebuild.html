@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="title" content="brookeburnside.com">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="./app/assets/img/favicon.ico">
+
+		<script src="https://use.typekit.net/dus8hki.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="brookeburnside.com">
+		<meta name="medium" content="ceramics">
+		<meta name="medium" content="clay">
+		<meta name="medium" content="design">
+		<meta name="medium" content="architecture">
+		<meta name="medium" content="sculpture">
+		<meta name="medium" content="Austin,TX">
+		<meta property="identifier-URL" content="http://thewellmarfa.com/">
+		<meta name="description" content="Portfolio Site for Ceramic Artist and Designer, Brooke Burnside">
+		<title>Brooke Burnside</title>
+		<meta property="og:title" content="Welcome to BrookeBurnside.com">
+		<meta property="og:url" content="http://brookeburnside.com">
+		<meta property="og:secure:url" content="https://brookeburnside.com">
+		<meta property="og:site_name" content="Brooke Burnside: Designer &amp; Ceramic Artist">
+		<meta property="og:type" content="website">
+
+		<!-- STYLES LIBS -->
+		<!-- build:css libs/libs.min.css -->
+		<link rel="stylesheet" type="text/css" href="./styles/css/reset.css" />
+		<!-- endbuild -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.css" />
+		<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
+
+		<!-- STYLES -->
+		<!-- build:css styles/css/app.min.css -->
+		<link rel="stylesheet" type="text/css" href="./styles/css/shared.css">
+		<link rel="stylesheet" type="text/css" href="./styles/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="./styles/css/devices.css">
+		<link rel="stylesheet" type="text/css" href="./styles/css/media_queries.css">
+		<link rel="stylesheet" type="text/css" href="./styles/css/custom.css">
+
+		<link rel="stylesheet" type="text/css" href="./styles/css/home.css">
+		<link rel="stylesheet" type="text/css" href="./styles/css/clay.css">
+		<link rel="stylesheet" type="text/css" href="./styles/css/chalk.css">
+		<link rel="stylesheet" type="text/css" href="./styles/css/design.css">
+		<link rel="stylesheet" type="text/css" href="./styles/css/about.css">
+		<link rel="stylesheet" type="text/css" href="./styles/css/contact.css">
+		<!-- endbuild -->
+
+		<base href="/">
+		</head>
+		<body ng-controller="AppCtrl">
+			<div ng-include="'./views/layout/nav_3.html'"></div>
+			<main ui-view ng-animate="'view'"></main>
+
+
+			<!-- JS Libs-->
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-animate.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-aria.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-messages.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.min.js"></script>
+
+			<!-- Scripts -->
+			<!-- build:js js/app.min.js -->
+			<script type="text/javascript" src="./js/app.module.js"></script>
+			<script type="text/javascript" src="./js/AppCtrl.js"></script>
+			<script src="./js/angular-smooth-scroll.js"></script>
+			<!-- endbuild -->
+
+			<script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "name": "bb_design_ang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Will Barbee",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "bs-html-injector": "^3.0.2",
+    "del": "^2.2.0",
+    "gulp": "3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify": "0.0.11",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-nodemon": "2.0.6",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.1",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-useref": "^3.1.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.8",
+    "lodash": "^4.13.1",
+    "uglify-js": "^2.6.2",
+    "vinyl-paths": "2.1.0"
+  },
+  "dependencies": {
+    "express": "4.13.4",
+    "path": "0.12.7",
+    "socket.io": "1.4.5"
+  }
+}

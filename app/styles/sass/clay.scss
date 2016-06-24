@@ -1,0 +1,268 @@
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+/**********CLAY MAIN GALLERY**************/
+
+.clay-main-view {
+  margin-top: 3em;
+	margin-bottom: 3em;
+	.row {
+	  list-style-type: none;
+	  width: 100%;
+	  padding: 0;
+	  text-align: center;
+		div {
+			.row {
+				.portfolio-item {
+				  display: inline-block;
+				  margin: auto .5em 2em 2.3em;
+				  position: relative;
+					width: em(250);
+					height: em(270);
+					position: center;
+					overflow: hidden;
+					background-repeat: no-repeat !important;
+				}
+			}
+		}
+	}
+}
+
+#overlay {
+  background: rgba(255,255,255,0.6);
+  overflow: auto;
+  text-align: center;
+  vertical-align: middle;
+  padding:  9px 15% 50px 2.5%;
+  margin: 0 20px 0 -20px;
+  position: relative;
+  display: inline-block;
+  opacity:0;
+  height: auto;
+  width: 130%;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+
+#overlay-text {
+	font-family:'futura-pt';
+	font-weight: 300;
+	color: hotpink;
+	font-size: em(60);
+	line-height: 80px;
+	text-decoration: none !important;
+}
+
+#large-itself {
+  font-size: 54px;
+}
+
+#clay-gallery-img:hover #overlay {
+    opacity: 1;
+}
+
+
+.ovl-small #overlay-text {
+  font-size: em(60);
+  line-height: 90px;
+}
+
+.ovl-small #overlay {
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+.too-large #overlay-text {
+  font-size: em(56);
+	line-height: 1.5em;
+}
+
+.too-large-2 #overlay-text {
+  font-size: em(56);
+	line-height: 1.5em;
+}
+
+.too-large-3 #overlay-text {
+  font-size: em(45);
+	line-height: 1.9em;
+}
+
+.ovl-xsmall #overlay{
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+.ovl-xsmall #overlay-text {
+  font-size: 68px;
+}
+
+.clay-img {
+  background-size: 250px 280px !important;
+}
+
+.ice {
+  background-size: 330px 280px !important;
+  background-position: -35px 0 !important;
+}
+
+#footer-clay {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.panther {
+	font-size: 60px !important;
+}
+
+// // // // // // MEDIA-QUERIES MAIN CLAY GALLERY
+
+@media (max-width: em(665)) {
+	.clay-main-view {
+		margin-left: 10% !important;
+	}
+};
+
+@media (min-width: em(665)) and (max-width: em(991)) {
+	.clay-main-view {
+		margin-left: 15%;
+	}
+};
+
+@media (min-width: em(991)) and (max-width: em(1100)) {
+	.clay-main-view {
+		margin-left: 7%;
+	}
+};
+
+@media (min-width: em(1100)) and (max-width: em(1300)) {
+	.clay-main-view {
+		margin-left: 12%;
+	}
+};
+
+@media (min-width: em(1300)) and (max-width: em(1400)) {
+	.clay-main-view {
+		margin-left: 15%;
+	}
+};
+
+@media (min-width: em(1400)) and (max-width: em(1600)) {
+	.clay-main-view {
+		margin-left: 20%;
+	}
+};
+
+
+@media (min-width: em(1600)) {
+	.clay-main-view {
+		margin-left: 18.5%;
+		div.row {
+			div {
+				div.row {
+					#clay-gallery-img {
+						margin-right: 5em;
+						a {
+							#overlay {
+								#overlay-text {
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+};
+
+/**********CLAY INDIVIDUAL GALLERY**************/
+
+.clay-individual-view {
+	margin-top: 1em;
+	.row {
+		div {
+			.clay-ind-text {
+				position: fixed;
+				margin-left: 4em;
+				margin-top: 0em;
+				float: left;
+				width: 40%;
+				h1 {
+					font-size: em(40);
+					font-weight: 100;
+					font-family: "futura-pt";
+					font-style: italic;
+					margin-bottom: 0.15em;
+				}
+				h2 {
+					font-size: em(18);
+					font-weight: lighter;
+					font-family: "futura-pt";
+				}
+			}
+			.clay-ind-images {
+				margin-right: 5em;
+				margin-bottom: 3em;
+				float: right;
+				width: 55%;
+				ul {
+					li {
+						img {
+							width: 100%;
+							margin-bottom: 2em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// // // // // // MEDIA-QUERIES INDIVIDUAL CLAY
+
+@media (max-width: em(1200)) {
+	.clay-ind-text {
+		h1 {
+			font-size: em(25) !important;
+		}
+	}
+
+	.clay-ind-images {
+		margin-right: 3em !important;
+	}
+}
+
+@media (max-width: em(855)) {
+	.clay-individual-view {
+		.row {
+			div {
+				.clay-ind-text {
+					width: 100% !important;
+					float: none;
+					margin-left: 0em;
+					margin-bottom: 1em;
+					position: relative !important;
+					clear: both;
+					h1 {
+					}
+					h2 {
+						font-size: em(20) !important;
+					}
+				}
+				.clay-ind-images {
+					width: 100% !important;
+					float: none;
+					ul {
+						li {
+							img {
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
