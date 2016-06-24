@@ -849,6 +849,10 @@ table {
     .design-main-view .row .design-box span {
       font-size: 0.9375em; } }
 
+@media (min-height: 46.25em) {
+  .mdl-grid {
+    margin-top: 10vh !important; } }
+
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,300);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900italic,300italic,300);
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,200);

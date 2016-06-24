@@ -617,3 +617,9 @@ $browser-context: 16; // Default
 		}
 	}
 };
+
+@media (min-height: em(740)) {
+	.mdl-grid {
+		margin-top: 10vh !important;
+	}
+}
