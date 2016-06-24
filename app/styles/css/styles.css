@@ -12,7 +12,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden !important; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126

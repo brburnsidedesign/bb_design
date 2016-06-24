@@ -1,4 +1,6 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  body {
+    overflow-x: hidden; }
   #bbd-logo {
     margin-top: 1.1em !important; }
   #bbd-headline {
@@ -6,7 +8,13 @@
   .design-box {
     margin-left: 8em !important; }
   .clay-main-view {
-    margin-left: 5em !important; } }
+    margin-left: 1em !important; }
+  .contact-info .right-info p {
+    font-size: 1.125em; }
+  .contact-info .left-info {
+    padding-top: 10em !important; }
+    .contact-info .left-info p {
+      width: 90% !important; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   #bbd-logo {
@@ -21,7 +29,10 @@
     margin-left: -0.75em !important; }
   .about-image {
     margin-left: -2em !important;
-    margin-top: -3em !important; } }
+    margin-top: -3em !important; }
+  .design-main-view .row .col-xs-12.design-box {
+    margin-left: 0.75em !important;
+    margin-top: 3em !important; } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
   #bbd-logo {

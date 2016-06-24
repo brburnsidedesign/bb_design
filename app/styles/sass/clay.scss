@@ -181,7 +181,10 @@ $browser-context: 16; // Default
 
 .clay-individual-view {
 	margin-top: 1em;
+	overflow-x: hidden;
+	width: 100%;
 	.row {
+		width: 100%;
 		div {
 			.clay-ind-text {
 				position: fixed;

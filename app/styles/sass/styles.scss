@@ -19,7 +19,7 @@ $browser-context: 16; // Default
 body {
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
