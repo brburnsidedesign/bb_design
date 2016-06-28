@@ -95,6 +95,24 @@
   .clay-main-view {
     margin-left: 15%; } }
 
+@media (min-width: 47.9375em) and (max-width: 61.9375em) {
+  #clay-gallery-img {
+    margin-right: -1em !important;
+    margin-left: 4em !important;
+    width: 31.25em !important;
+    height: 32.5em !important;
+    background-size: cover !important;
+    background-position: center center !important; }
+    #clay-gallery-img #overlay {
+      width: 31.875em !important;
+      height: 32.5em !important;
+      padding-top: 20% !important;
+      padding-left: 10% !important; }
+      #clay-gallery-img #overlay #overlay-text {
+        line-height: 2.5em !important; }
+  .dv {
+    margin-right: 13em !important; } }
+
 @media (min-width: 61.9375em) and (max-width: 68.75em) {
   .clay-main-view {
     margin-left: 7%; } }
