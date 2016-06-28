@@ -12,11 +12,16 @@ $browser-context: 16; // Default
 	}
 
 	#bbd-logo {
-		margin-top: 1.1em !important;
+		margin-top: 0em !important;
+		margin-left: -2em !important;
+	}
+
+	#sidebarButtonCase {
+		width: 12%;
 	}
 
 	#bbd-headline {
-		margin-top: 2.1em;
+		margin-top: 1.7em;
 	}
 
 	.design-box {
@@ -41,6 +46,28 @@ $browser-context: 16; // Default
 				width: 90% !important;
 			}
 		}
+	}
+
+	#clay-gallery-img {
+		margin-right: -1em !important;
+		margin-left: 7em !important;
+		width: em(500) !important;
+		height: em(520) !important;
+		background-size: cover !important;
+		background-position: center center !important;
+		#overlay {
+			width: em(510) !important;
+			height: em(520) !important;
+			padding-top: 20% !important;
+			padding-left: 10% !important;
+			#overlay-text {
+				line-height: em(40) !important;
+			}
+		}
+	}
+
+	.dv {
+		margin-right: 13em !important;
 	}
 }
 
