@@ -7,12 +7,21 @@ $browser-context: 16; // Default
 //iPad
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	body {
+		overflow-x: hidden;
+	}
+
 	#bbd-logo {
-		margin-top: 1.1em !important;
+		margin-top: 0em !important;
+		margin-left: -2em !important;
+	}
+
+	#sidebarButtonCase {
+		width: 12%;
 	}
 
 	#bbd-headline {
-		margin-top: 2.1em;
+		margin-top: 1.7em;
 	}
 
 	.design-box {
@@ -20,9 +29,45 @@ $browser-context: 16; // Default
 	}
 
 	.clay-main-view {
-		margin-left: 5em !important;
+		margin-left: 1em !important;
 		.row {
 		}
+	}
+
+	.contact-info {
+		.right-info {
+			p {
+				font-size: em(18);
+			}
+		}
+		.left-info {
+			padding-top: 10em !important;
+			p {
+				width: 90% !important;
+			}
+		}
+	}
+
+	#clay-gallery-img {
+		margin-right: -1em !important;
+		margin-left: 7em !important;
+		width: em(500) !important;
+		height: em(520) !important;
+		background-size: cover !important;
+		background-position: center center !important;
+		#overlay {
+			width: em(510) !important;
+			height: em(520) !important;
+			padding-top: 20% !important;
+			padding-left: 10% !important;
+			#overlay-text {
+				line-height: em(40) !important;
+			}
+		}
+	}
+
+	.dv {
+		margin-right: 13em !important;
 	}
 }
 
@@ -38,6 +83,18 @@ $browser-context: 16; // Default
 
 //iPhone 6
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+
+	.project-individual-sections {
+		overflow-x: hidden !important;
+		.black-section {
+			overflow-x: hidden !important;
+		}
+		.white-section {
+			overflow-x: hidden !important;
+		}
+	}
+
+
 	.clay-main-view {
 		.row {
 			margin-left: -1.5em;
@@ -48,9 +105,64 @@ $browser-context: 16; // Default
 		margin-left: -0.75em !important;
 	}
 
-	.about-image {
-		margin-left: -2em !important;
-		margin-top: -3em !important;
+	.about-main-view {
+		height: auto !important;
+		overflow-x: hidden !important;
+		.row {
+			overflow-x: hidden !important;
+			div {
+				overflow-x: hidden !important;
+				.about-text {
+				}
+				.about-image {
+					width: 100vw !important;
+					margin-left: -1em !important;
+					margin-top: -1em !important;
+					margin-bottom: 0em !important;
+				}
+			}
+		}
+	}
+
+
+
+	.design-main-view {
+		.row {
+			.col-xs-12.design-box {
+				margin-left: 0.75em !important;
+				margin-top: 3em !important;
+			}
+		}
+	}
+
+	.contact-info {
+		.right-info {
+			p {
+				font-size: em(18);
+			}
+		}
+		.left-info {
+			height: 20em !important;
+			p {
+				width: 90% !important;
+				margin-right: 0em !important;
+			}
+		}
+		.right-info {
+			height: 18em !important;
+			p {
+				width: 90% !important;
+				margin-left: 0em !important;
+			}
+			#social-icons {
+				margin-top: 4.75em !important;
+				margin-left: -1.25em !important;
+			}
+		}
+	}
+
+	.chalk-main-view {
+		margin-top: -4em !important;
 	}
 }
 
@@ -85,6 +197,7 @@ $browser-context: 16; // Default
 
 //iPhone 5
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) { /* STYLES GO HERE */ }
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { /* STYLES GO HERE */}

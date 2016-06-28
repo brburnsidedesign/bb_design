@@ -348,3 +348,7 @@
       font-size: 0.9375em; }
     .design-main-view .row .design-box span {
       font-size: 0.9375em; } }
+
+@media (min-height: 46.25em) {
+  .mdl-grid {
+    margin-top: 10vh !important; } }

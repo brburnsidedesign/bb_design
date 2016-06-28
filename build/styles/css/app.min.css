@@ -159,7 +159,7 @@ md-sidenav.md-closed.md-locked-open-add-active {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden !important; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -209,12 +209,41 @@ table {
   border-spacing: 0; }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  body {
+    overflow-x: hidden; }
   #bbd-logo {
-    margin-top: 1.1em !important; }
+    margin-top: 0em !important;
+    margin-left: -2em !important; }
+  #sidebarButtonCase {
+    width: 12%; }
   #bbd-headline {
-    margin-top: 2.1em; }
+    margin-top: 1.7em; }
   .design-box {
-    margin-left: 8em !important; } }
+    margin-left: 8em !important; }
+  .clay-main-view {
+    margin-left: 1em !important; }
+  .contact-info .right-info p {
+    font-size: 1.125em; }
+  .contact-info .left-info {
+    padding-top: 10em !important; }
+    .contact-info .left-info p {
+      width: 90% !important; }
+  #clay-gallery-img {
+    margin-right: -1em !important;
+    margin-left: 7em !important;
+    width: 31.25em !important;
+    height: 32.5em !important;
+    background-size: cover !important;
+    background-position: center center !important; }
+    #clay-gallery-img #overlay {
+      width: 31.875em !important;
+      height: 32.5em !important;
+      padding-top: 20% !important;
+      padding-left: 10% !important; }
+      #clay-gallery-img #overlay #overlay-text {
+        line-height: 2.5em !important; }
+  .dv {
+    margin-right: 13em !important; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   #bbd-logo {
@@ -223,13 +252,48 @@ table {
     margin-top: 2.1em; } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .project-individual-sections {
+    overflow-x: hidden !important; }
+    .project-individual-sections .black-section {
+      overflow-x: hidden !important; }
+    .project-individual-sections .white-section {
+      overflow-x: hidden !important; }
   .clay-main-view .row {
     margin-left: -1.5em; }
   .mdl-grid {
     margin-left: -0.75em !important; }
-  .about-image {
-    margin-left: -2em !important;
-    margin-top: -3em !important; } }
+  .about-main-view {
+    height: auto !important;
+    overflow-x: hidden !important; }
+    .about-main-view .row {
+      overflow-x: hidden !important; }
+      .about-main-view .row div {
+        overflow-x: hidden !important; }
+        .about-main-view .row div .about-image {
+          width: 100vw !important;
+          margin-left: -1em !important;
+          margin-top: -1em !important;
+          margin-bottom: 0em !important; }
+  .design-main-view .row .col-xs-12.design-box {
+    margin-left: 0.75em !important;
+    margin-top: 3em !important; }
+  .contact-info .right-info p {
+    font-size: 1.125em; }
+  .contact-info .left-info {
+    height: 20em !important; }
+    .contact-info .left-info p {
+      width: 90% !important;
+      margin-right: 0em !important; }
+  .contact-info .right-info {
+    height: 18em !important; }
+    .contact-info .right-info p {
+      width: 90% !important;
+      margin-left: 0em !important; }
+    .contact-info .right-info #social-icons {
+      margin-top: 4.75em !important;
+      margin-left: -1.25em !important; }
+  .chalk-main-view {
+    margin-top: -4em !important; } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
   #bbd-logo {
@@ -247,9 +311,6 @@ table {
   /* STYLES GO HERE */ }
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
-  /* STYLES GO HERE */ }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* STYLES GO HERE */ }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
@@ -391,31 +452,35 @@ table {
 
 /**********CLAY INDIVIDUAL GALLERY**************/
 .clay-individual-view {
-  margin-top: 1em; }
-  .clay-individual-view .row div .clay-ind-text {
-    position: fixed;
-    margin-left: 4em;
-    margin-top: 0em;
-    float: left;
-    width: 40%; }
-    .clay-individual-view .row div .clay-ind-text h1 {
-      font-size: 2.5em;
-      font-weight: 100;
-      font-family: "futura-pt";
-      font-style: italic;
-      margin-bottom: 0.15em; }
-    .clay-individual-view .row div .clay-ind-text h2 {
-      font-size: 1.125em;
-      font-weight: lighter;
-      font-family: "futura-pt"; }
-  .clay-individual-view .row div .clay-ind-images {
-    margin-right: 5em;
-    margin-bottom: 3em;
-    float: right;
-    width: 55%; }
-    .clay-individual-view .row div .clay-ind-images ul li img {
-      width: 100%;
-      margin-bottom: 2em; }
+  margin-top: 1em;
+  overflow-x: hidden;
+  width: 100%; }
+  .clay-individual-view .row {
+    width: 100%; }
+    .clay-individual-view .row div .clay-ind-text {
+      position: fixed;
+      margin-left: 4em;
+      margin-top: 0em;
+      float: left;
+      width: 40%; }
+      .clay-individual-view .row div .clay-ind-text h1 {
+        font-size: 2.5em;
+        font-weight: 100;
+        font-family: "futura-pt";
+        font-style: italic;
+        margin-bottom: 0.15em; }
+      .clay-individual-view .row div .clay-ind-text h2 {
+        font-size: 1.125em;
+        font-weight: lighter;
+        font-family: "futura-pt"; }
+    .clay-individual-view .row div .clay-ind-images {
+      margin-right: 5em;
+      margin-bottom: 3em;
+      float: right;
+      width: 55%; }
+      .clay-individual-view .row div .clay-ind-images ul li img {
+        width: 100%;
+        margin-bottom: 2em; }
 
 @media (max-width: 75em) {
   .clay-ind-text h1 {
@@ -802,6 +867,10 @@ table {
       font-size: 0.9375em; }
     .design-main-view .row .design-box span {
       font-size: 0.9375em; } }
+
+@media (min-height: 46.25em) {
+  .mdl-grid {
+    margin-top: 10vh !important; } }
 
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,300);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900italic,300italic,300);

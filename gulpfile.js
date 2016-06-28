@@ -143,6 +143,12 @@ gulp.task('copy-js', function() {
 		.pipe(gulp.dest('build/js'));
 });
 
+//COPY IMG FROM APP TO BUILD
+gulp.task('copy-images', function() {
+	return gulp.src('app/assets/img/*')
+		.pipe(gulp.dest('build/assets/img'));
+});
+
 //COPY INDEX FROM ROOT TO BUILD
 gulp.task('copy-index', function() {
 	return gulp.src('./index.html')
@@ -187,7 +193,7 @@ gulp.task('watch', function() {
 	gulp.watch('./app/img/*.+(png|jpg|jpeg|gif|svg)',['images']);
 });
 
-gulp.task('default', ['clean:build', 'sass', 'build-js', 'build-css', 'build-html', 'images', 'svg-min', 'watch', 'useref', 'copy-index', 'copy-js', 'browserSync'], function() {
+gulp.task('default', ['clean:build', 'sass', 'build-js', 'build-css', 'build-html', 'copy-images', 'svg-min', 'watch', 'useref', 'copy-index', 'copy-js', 'browserSync'], function() {
 
 		return gulp.src(['./build/index.prebuild.html', 'build/styles/*.css'], {read: false})
 		.pipe(clean());
