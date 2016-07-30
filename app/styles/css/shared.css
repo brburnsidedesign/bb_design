@@ -36,7 +36,7 @@ button#sidebarButtonCase {
 #bbd-headline {
   margin-top: 1.5em;
   font-size: 1.5em;
-  font-family: "futura-pt";
+  font-family: "futura-pt", Arial, Helvetica, sans-serif;
   font-weight: lighter;
   color: black; }
   #bbd-headline span {

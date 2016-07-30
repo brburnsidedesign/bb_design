@@ -36,7 +36,7 @@ button#sidebarButtonCase {
 #bbd-headline {
   margin-top: 1.5em;
   font-size: 1.5em;
-  font-family: "futura-pt";
+  font-family: "futura-pt", Arial, Helvetica, sans-serif;
   font-weight: lighter;
   color: black; }
   #bbd-headline span {
@@ -983,7 +983,8 @@ table {
         .contact-view .contact-info .right-info p a {
           color: #00c3ff; }
           .contact-view .contact-info .right-info p a:hover {
-            color: black; }
+            color: black;
+            text-decoration: none; }
       .contact-view .contact-info .right-info #social-icons {
         margin-top: 9em;
         position: fixed; }

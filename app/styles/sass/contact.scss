@@ -10,7 +10,6 @@ $browser-context: 16; // Default
 		.main-image {
 			// height: 65vh;
 			width: 100%;
-			// background-image: url('../../assets/img/banana.jpg');
 			background-size: cover;
 			background-position: center 1em;
 			background-repeat: no-repeat;
@@ -44,6 +43,7 @@ $browser-context: 16; // Default
 					color: #00c3ff;
 					&:hover {
 						color: black;
+						text-decoration: none;
 					}
 				}
 			}

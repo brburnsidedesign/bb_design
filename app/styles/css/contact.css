@@ -31,7 +31,8 @@
         .contact-view .contact-info .right-info p a {
           color: #00c3ff; }
           .contact-view .contact-info .right-info p a:hover {
-            color: black; }
+            color: black;
+            text-decoration: none; }
       .contact-view .contact-info .right-info #social-icons {
         margin-top: 9em;
         position: fixed; }
