@@ -19,29 +19,29 @@ var gulp  						=		require('gulp'),
 
 
 		var htmlFiles = [
-			'./app/**/*.css',
-			'./app/**/*.js',
-			'./app/**/*.scss',
-			'./app/views/**/*.html',
-			'./app/views/**/**/*.html',
-			'./app/views/**/**/**/*.html',
-			'./app/index.debug.html',
-			'./app/index.prebuild.html',
+			'./src/**/*.css',
+			'./src/**/*.js',
+			'./src/**/*.scss',
+			'./src/views/**/*.html',
+			'./src/views/**/**/*.html',
+			'./src/views/**/**/**/*.html',
+			'./src/index.debug.html',
+			'./src/index.prebuild.html',
 			'./index.html'
 		];
 
 		var stylesFiles = [
-			'app/styles/css/reset.css',
-			'app/styles/css/styles.css',
-			'app/styles/css/media_queries.css',
-			'app/styles/css/home.css',
-			'app/styles/css/contact.css',
-			'app/styles/css/shared.css',
-			'app/styles/css/devices.css',
-			'app/styles/css/clay.css',
-			'app/styles/css/design.css',
-			'app/styles/css/about.css',
-			'app/styles/css/custom.css'
+			'src/styles/css/reset.css',
+			'src/styles/css/styles.css',
+			'src/styles/css/media_queries.css',
+			'src/styles/css/home.css',
+			'src/styles/css/contact.css',
+			'src/styles/css/shared.css',
+			'src/styles/css/devices.css',
+			'src/styles/css/clay.css',
+			'src/styles/css/design.css',
+			'src/styles/css/about.css',
+			'src/styles/css/custom.css'
 		];
 
 		var buildStyles = [
@@ -66,9 +66,9 @@ gulp.task('clean:build', function() {
 
 //BUILD STYLES
 gulp.task('sass', function() {
-    gulp.src('app/styles/sass/*.scss')
+    gulp.src('src/styles/sass/*.scss')
       .pipe(sass().on('error', sass.logError))
-      .pipe(gulp.dest('app/styles/css/'))
+      .pipe(gulp.dest('src/styles/css/'))
 			.pipe(reload({stream:true}));
 });
 
@@ -82,9 +82,9 @@ gulp.task('build-css', function() {
 //BUILD SCRIPTS
 gulp.task('build-js', function() {
 	return gulp.src([
-		'app/js/app.module.js',
-		'app/js/AppCtrl.js',
-		'app/js/angular-smooth-scroll.js'
+		'src/js/app.module.js',
+		'src/js/AppCtrl.js',
+		'src/js/angular-smooth-scroll.js'
 	])
 		.pipe(uglify({mangle:false}))
 		.pipe(concat('app.min.js'))
@@ -100,8 +100,8 @@ gulp.task('build-html', function(){
   };
 
   return gulp.src([
-		'app/views/**/*.html',
-		'app/views/**/**/*.html',
+		'src/views/**/*.html',
+		'src/views/**/**/*.html',
 	])
     .pipe(cleanHtml(opts))
     .pipe(gulp.dest('./build/views'))
@@ -111,7 +111,7 @@ gulp.task('build-html', function(){
 
 //IMAGES
 gulp.task('images', function() {
-    return gulp.src('app/assets/img/*.+(png|jpg|jpeg|gif|svg)')
+    return gulp.src('src/assets/img/*.+(png|jpg|jpeg|gif|svg)')
     .pipe(imagemin({
 			interlaced: true
 		}))
@@ -119,13 +119,13 @@ gulp.task('images', function() {
 });
 
 gulp.task('svg-min', function () {
-    return gulp.src('app/assets/img/*.svg')
+    return gulp.src('src/assets/img/*.svg')
         .pipe(svgmin())
         .pipe(gulp.dest('build/assets/img'));
 });
 
 gulp.task('useref', function() {
-	return gulp.src('app/index.prebuild.html')
+	return gulp.src('src/index.prebuild.html')
   .pipe(useref())
 	.pipe(gulp.dest('build'));
 });
@@ -139,13 +139,13 @@ gulp.task('copy-fonts', function() {
 
 //COPY JS FILES FROM APP TO BUILD
 gulp.task('copy-js', function() {
-	return gulp.src('app/js/*')
+	return gulp.src('src/js/*')
 		.pipe(gulp.dest('build/js'));
 });
 
 //COPY IMG FROM APP TO BUILD
 gulp.task('copy-images', function() {
-	return gulp.src('app/assets/img/*')
+	return gulp.src('src/assets/img/*')
 		.pipe(gulp.dest('build/assets/img'));
 });
 
@@ -156,7 +156,7 @@ gulp.task('copy-index', function() {
 });
 
 gulp.task('watch', function() {
-	return gulp.src([htmlFiles, './app/js/*.js'])
+	return gulp.src([htmlFiles, './src/js/*.js'])
 	.pipe(watch())
 	.pipe(gulp.dest('build'));
 
@@ -172,7 +172,7 @@ gulp.task('browserSync', function() {
 	browserSync.init(htmlFiles, {
 		server: {
 			baseDir: "./",
-			index: 'app/index.debug.html'
+			index: 'src/index.debug.html'
 		},
 	});
 });
@@ -188,9 +188,9 @@ gulp.task('bs-production', function() {
 
 gulp.task('watch', function() {
 	gulp.watch(htmlFiles, ['build-html']);
-	gulp.watch('./app/styles/css/*.css', ['build-css']);
-	gulp.watch('./app/styles/sass/*.scss',['sass']);
-	gulp.watch('./app/img/*.+(png|jpg|jpeg|gif|svg)',['images']);
+	gulp.watch('./src/styles/css/*.css', ['build-css']);
+	gulp.watch('./src/styles/sass/*.scss',['sass']);
+	gulp.watch('./src/img/*.+(png|jpg|jpeg|gif|svg)',['images']);
 });
 
 gulp.task('default', ['clean:build', 'sass', 'build-js', 'build-css', 'build-html', 'copy-images', 'svg-min', 'watch', 'useref', 'copy-index', 'copy-js', 'browserSync'], function() {

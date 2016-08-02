@@ -1,0 +1,75 @@
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+.chalk-main-view {
+	margin-top: 3em;
+	margin-bottom: 3em;
+	.row {
+		list-style-type: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		div {
+			margin: 0 auto;
+			.chalk-img {
+				display: inline-block;
+				margin: auto 1vw 2em 2.3em;
+				position: relative;
+				width: em(450);
+				height: em(470);
+				position: center;
+				overflow: hidden;
+				background-repeat: no-repeat !important;
+				background-size: 450px 480px !important;
+				a {
+					#overlay {
+						background: rgba(255,255,255,0.6);
+						overflow: auto;
+						text-align: center;
+						vertical-align: middle;
+						padding:  9px 15% 50px 2.5%;
+						margin: 0 20px 0 -20px;
+						position: relative;
+						display: inline-block;
+						opacity:0;
+						height: auto;
+						width: 130%;
+						-webkit-transition: opacity .25s ease;
+						-moz-transition: opacity .25s ease;
+						#overlay-text {
+							font-family:'futura-pt';
+							font-weight: 300;
+							color: hotpink;
+							font-size: em(60);
+							line-height: 80px;
+							text-decoration: none !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.col-xs-12.col-md-3.portfolio-item.chalk-img:hover #overlay {
+	opacity: 1;
+}
+
+
+////////////////////// MEDIA-QUERIES
+@media (min-width: em(767)) and (max-width: em(991)) {
+};
+
+@media (min-width: em(991)) and (max-width: em(1200)) {
+};
+
+@media (min-width: em(1200)) and (max-width: em(1300)) {
+};
+
+@media (min-width: em(1300)) and (max-width: em(1600)) {
+};
+
+@media (min-width: em(1600)) {
+};
