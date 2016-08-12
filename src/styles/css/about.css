@@ -14,15 +14,16 @@
   .about-main-view .row div .about-text {
     position: fixed;
     float: left;
-    width: 40%;
+    width: 50%;
     margin-top: 15vh;
-    margin-left: 2em;
     clear: none; }
     .about-main-view .row div .about-text p {
+      width: 80%;
       font-family: "futura-pt";
       font-weight: 100;
-      font-size: 1.25em;
-      text-align: center; }
+      font-size: 1.5625em;
+      text-align: center;
+      margin: 0 6%; }
       .about-main-view .row div .about-text p a {
         color: hotpink !important; }
         .about-main-view .row div .about-text p a:hover {
@@ -47,6 +48,9 @@
     width: 90%;
     height: auto;
     margin-top: 1em; }
+    .about-main-view .row div .about-text p {
+      width: 100%;
+      margin: 0 3%; }
   .about-main-view .row div .about-image {
     height: 35em;
     width: 120vw;

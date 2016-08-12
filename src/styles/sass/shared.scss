@@ -24,10 +24,12 @@ main {
 }
 
 ///////////////SIDENAV//////////////////
-
+.layout-row.flex {
+	height: 6em;
+}
 
 button#sidebarButtonCase {
-	margin-top: 1.4em;
+	margin-top: 0.4em;
 	margin-left: 2em;
 	&:hover, &:focus {
 		outline: none !important;
@@ -46,6 +48,7 @@ button#sidebarButtonCase {
 	height: auto;
 	width: 4em;
 	margin-left: -2em;
+	margin-top: 0em;
 	&:focus {
 		outline: none !important;
 	}
@@ -56,7 +59,7 @@ button#sidebarButtonCase {
 }
 
 #bbd-headline {
-	margin-top: 1.5em;
+	margin-top: 1.3em;
 	font-size: 1.5em;
 	font-family: "futura-pt", Arial, Helvetica, sans-serif;
 	font-weight: lighter;
@@ -71,7 +74,7 @@ button#sidebarButtonCase {
 	height: auto;
 	width: 2.5em;
 	padding-top: 1.5em;
-	margin: 0;
+	margin: 0 0 1em 0;
 	&:hover {
 		opacity: 0.6;
 	}
@@ -125,7 +128,7 @@ md-sidenav.md-closed.md-locked-open-add-active {
 			text-align: center;
 			li {
 				.md-primary.text-button.md-button {
-					font-size: 1.6em;
+					font-size: 1.9em;
 					line-height: 11vh;
 					font-family: "futura-pt";
 					font-weight: 300;

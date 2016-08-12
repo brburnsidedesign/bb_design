@@ -1,66 +1,67 @@
-var gulp  						=		require('gulp'),
-		del								=		require('del'),
-		lodash						=		require('lodash'),
-		clean							=		require('gulp-clean'),
-		sass							=		require('gulp-sass'),
-		cleanCSS 					= 	require('gulp-clean-css'),
-		concat						=		require('gulp-concat'),
-		uglify 						= 	require('gulp-uglify'),
-		replace						=		require('gulp-replace'),
-		cleanHtml					=		require('gulp-minify-html'),
-		imagemin 					= 	require('gulp-imagemin'),
-		gutil							=		require('gulp-util'),
-		svgmin						=		require('gulp-svgmin'),
-		browserSync 			=		require('browser-sync'),
-		useref						=		require('gulp-useref'),
-		htmlInjector 			= 	require('bs-html-injector'),
-		watch							=		require('gulp-watch'),
-		reload						=		browserSync.reload;
+(function (r) {
+    "use strict";
+
+var gulp 					= r('gulp'),
+		htmlInjector 		= r('bs-html-injector'),
+  	plumber 				= r('gulp-plumber'),
+  	webserver 			= r('gulp-webserver'),
+  	ngAnnotate 			= r('gulp-ng-annotate'),
+  	angularFilesort = r('gulp-angular-filesort'),
+  	sass 						= r('gulp-sass'),
+  	inject 					= r('gulp-inject'),
+  	del 						= r('del'),
+		imagemin				= r('gulp-imagemin'),
+		uglify					=	r('gulp-uglify'),
+		concat 					= r('gulp-concat'),
+		nodemon					=	r('gulp-nodemon'),
+		browserSync 		= r('browser-sync').create(),
+		reload 					= browserSync.reload;
 
 
-		var htmlFiles = [
-			'./src/**/*.css',
-			'./src/**/*.js',
-			'./src/**/*.scss',
-			'./src/views/**/*.html',
-			'./src/views/**/**/*.html',
-			'./src/views/**/**/**/*.html',
-			'./src/index.debug.html',
-			'./src/index.prebuild.html',
-			'./index.html'
-		];
+var paths = {
+    build : 'build/',
+    buildImgs: 'build/assets/img/',
+		buildFonts: 'build/assets/fonts/',
+    buildStyles: 'build/styles/',
+    buildApp: 'build/app/',
+    buildIndex: 'build/index.html',
+		buildVendor: 'build/vendor/',
 
-		var stylesFiles = [
-			'src/styles/css/reset.css',
-			'src/styles/css/styles.css',
-			'src/styles/css/media_queries.css',
-			'src/styles/css/home.css',
-			'src/styles/css/contact.css',
-			'src/styles/css/shared.css',
-			'src/styles/css/devices.css',
-			'src/styles/css/clay.css',
-			'src/styles/css/design.css',
-			'src/styles/css/about.css',
-			'src/styles/css/custom.css'
-		];
+		index: 'src/index.html',
+    markupSrc: 'src/app/**/*.html',
+    imgSrc:'src/assets/img/*',
+		fontsSrc: 'src/assets/fonts/*',
+    styleSrc: 'src/styles/**/*.css',
+		styleSrcSass: 'src/styles/**/*.scss',
+		vendorFiles: 'src/vendors/*',
+    appSrc: ['src/app/*/*.js', '!src/index.html'],
+};
 
-		var buildStyles = [
-			'build/styles/reset.css',
-			'build/styles/styles.css',
-			'build/styles/media_queries.css',
-			'build/styles/home.css',
-			'build/styles/contact.css',
-			'build/styles/shared.css',
-			'build/styles/devices.css',
-			'build/styles/clay.css',
-			'build/styles/design.css',
-			'build/styles/about.css',
-			'build/styles/custom.css'
-		];
+	gulp.task('default', ['watch', 'sass', 'browser-sync', 'nodemon']);
+
+	gulp.task('watch', ['serve'], function () {
+	    gulp.watch(paths.markupSrc, ['copyFiles']);
+	    gulp.watch(paths.styleSrc, ['copyFiles']);
+	    gulp.watch(paths.appSrc, ['copyFiles']);
+			gulp.watch(paths.vendorFiles, ['copyFiles']);
+	    gulp.watch(paths.index, ['copyFiles']);
+			gulp.watch('src/styles/sass/*.scss', ['sass']);
+	});
+
+	gulp.task('serve', ['copyFiles'], function() {
+	   return gulp.src(paths.build)
+	    .pipe(webserver({
+	        livereload: true,
+	        proxies: [{
+	            source: '/api',
+	            target: 'http://localhost:1337'
+	        }]
+	    }));
+	});
 
 //clean up/remove build folder and rebuild files
-gulp.task('clean:build', function() {
-  return del.sync('./build');
+gulp.task('clean', function() {
+  return del.sync('build/');
 });
 
 
@@ -72,42 +73,63 @@ gulp.task('sass', function() {
 			.pipe(reload({stream:true}));
 });
 
-gulp.task('build-css', function() {
-  return gulp.src(stylesFiles)
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('build/styles'))
-		.pipe(reload({stream:true}));
+gulp.task('copyFiles', function () {
+
+    var appFiles = gulp.src(paths.appSrc)
+        .pipe(angularFilesort())
+        .pipe(ngAnnotate())
+				.pipe(uglify())
+				.pipe(concat('app.min.js'))
+        .pipe(gulp.dest('build/app/core/'));
+
+    var appStyles = gulp.src('src/styles/css/*.css')
+        .pipe(sass.sync({
+            outputStyle: 'compressed',
+            errLogToConsole: true
+        }))
+        .pipe(gulp.dest(paths.buildStyles));
+
+    var appImgs = gulp.src(paths.imgSrc)
+        .pipe(gulp.dest(paths.buildImgs));
+
+		var appFonts = gulp.src(paths.fontsSrc)
+        .pipe(gulp.dest(paths.buildFonts));
+
+		var appVendors = gulp.src(paths.vendorFiles)
+		    .pipe(gulp.dest(paths.buildVendor));
+
+    var appMarkup = gulp.src(paths.markupSrc)
+        .pipe(gulp.dest(paths.buildApp));
+
+    return gulp.src(paths.index)
+        .pipe(plumber())
+        .pipe(gulp.dest(paths.build))
+        .pipe(inject(appMarkup, {
+            relative: true
+        }))
+        .pipe(inject(appImgs, {
+            relative: true
+        }))
+				.pipe(inject(appVendors, {
+						relative: true,
+						name: 'vendorInject'
+				}))
+        .pipe(inject(appStyles, {
+            relative: true,
+            name: 'stylesInject'
+        }))
+        .pipe(inject(appFiles, {
+            relative: true
+        }))
+        .pipe(gulp.dest(paths.build));
 });
 
-//BUILD SCRIPTS
-gulp.task('build-js', function() {
-	return gulp.src([
-		'src/js/app.module.js',
-		'src/js/AppCtrl.js',
-		'src/js/angular-smooth-scroll.js'
-	])
-		.pipe(uglify({mangle:false}))
-		.pipe(concat('app.min.js'))
-	 	.pipe(gulp.dest('build/js'))
-		.pipe(reload({stream:true}));
-	});
 
-//BUILD HTML
-gulp.task('build-html', function(){
-  var opts = {
-    conditionals: true,
-    spare: true
-  };
-
-  return gulp.src([
-		'src/views/**/*.html',
-		'src/views/**/**/*.html',
-	])
-    .pipe(cleanHtml(opts))
-    .pipe(gulp.dest('./build/views'))
-		.pipe(reload({stream: true}));
+gulp.task('svg-min', function () {
+    return gulp.src('src/assets/img/*.svg')
+        .pipe(svgmin())
+        .pipe(gulp.dest('build/assets/img'));
 });
-
 
 //IMAGES
 gulp.task('images', function() {
@@ -118,84 +140,22 @@ gulp.task('images', function() {
     .pipe(gulp.dest('build/assets/img'));
 });
 
-gulp.task('svg-min', function () {
-    return gulp.src('src/assets/img/*.svg')
-        .pipe(svgmin())
-        .pipe(gulp.dest('build/assets/img'));
+gulp.task('browser-sync', ['nodemon'], function() {
+	browserSync.init({
+	 proxy: "localhost:8000",  // local node app address
+	 port: 3000,  // use *different* port than above
+	 notify: true
+ 	});
 });
 
-gulp.task('useref', function() {
-	return gulp.src('src/index.prebuild.html')
-  .pipe(useref())
-	.pipe(gulp.dest('build'));
+gulp.task('nodemon', function (cb) {
+		var callbackCalled = false;
+		return nodemon({script: './server.js'}).on('start', function () {
+				if (!callbackCalled) {
+						callbackCalled = true;
+						cb();
+				}
+		});
 });
 
-
-// COPY FONTS FOLDER OVER TO BUILD FOLDER
-gulp.task('copy-fonts', function() {
-	return gulp.src('./fonts/*')
-		.pipe(gulp.dest('build/fonts'));
-});
-
-//COPY JS FILES FROM APP TO BUILD
-gulp.task('copy-js', function() {
-	return gulp.src('src/js/*')
-		.pipe(gulp.dest('build/js'));
-});
-
-//COPY IMG FROM APP TO BUILD
-gulp.task('copy-images', function() {
-	return gulp.src('src/assets/img/*')
-		.pipe(gulp.dest('build/assets/img'));
-});
-
-//COPY INDEX FROM ROOT TO BUILD
-gulp.task('copy-index', function() {
-	return gulp.src('./index.html')
-		.pipe(gulp.dest('build'));
-});
-
-gulp.task('watch', function() {
-	return gulp.src([htmlFiles, './src/js/*.js'])
-	.pipe(watch())
-	.pipe(gulp.dest('build'));
-
-});
-
-//BROWSER SYNC DEV & PROD
-gulp.task('browserSync', function() {
-
-	browserSync.use(htmlInjector, {
-		files: htmlFiles
-	});
-
-	browserSync.init(htmlFiles, {
-		server: {
-			baseDir: "./",
-			index: 'src/index.debug.html'
-		},
-	});
-});
-
-gulp.task('bs-production', function() {
-	browserSync.create().init( {
-		server: {
-			baseDir: "./",
-			index: 'build/index.html',
-		},
-	});
-});
-
-gulp.task('watch', function() {
-	gulp.watch(htmlFiles, ['build-html']);
-	gulp.watch('./src/styles/css/*.css', ['build-css']);
-	gulp.watch('./src/styles/sass/*.scss',['sass']);
-	gulp.watch('./src/img/*.+(png|jpg|jpeg|gif|svg)',['images']);
-});
-
-gulp.task('default', ['clean:build', 'sass', 'build-js', 'build-css', 'build-html', 'copy-images', 'svg-min', 'watch', 'useref', 'copy-index', 'copy-js', 'browserSync'], function() {
-
-		return gulp.src(['./build/index.prebuild.html', 'build/styles/*.css'], {read: false})
-		.pipe(clean());
-
-});
+}(require));

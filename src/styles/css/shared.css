@@ -11,8 +11,11 @@ main {
     /* end with opacity 1 (fade in) */
     opacity: 1; }
 
+.layout-row.flex {
+  height: 6em; }
+
 button#sidebarButtonCase {
-  margin-top: 1.4em;
+  margin-top: 0.4em;
   margin-left: 2em; }
   button#sidebarButtonCase:hover, button#sidebarButtonCase:focus {
     outline: none !important;
@@ -26,7 +29,8 @@ button#sidebarButtonCase {
 #bbd-logo {
   height: auto;
   width: 4em;
-  margin-left: -2em; }
+  margin-left: -2em;
+  margin-top: 0em; }
   #bbd-logo:focus {
     outline: none !important; }
   #bbd-logo:hover {
@@ -34,7 +38,7 @@ button#sidebarButtonCase {
     opacity: 0.6; }
 
 #bbd-headline {
-  margin-top: 1.5em;
+  margin-top: 1.3em;
   font-size: 1.5em;
   font-family: "futura-pt", Arial, Helvetica, sans-serif;
   font-weight: lighter;
@@ -47,7 +51,7 @@ button#sidebarButtonCase {
   height: auto;
   width: 2.5em;
   padding-top: 1.5em;
-  margin: 0; }
+  margin: 0 0 1em 0; }
   #bbd-logo-open:hover {
     opacity: 0.6; }
 
@@ -87,7 +91,7 @@ md-sidenav.md-closed.md-locked-open-add-active {
       margin-top: 1em;
       text-align: center; }
       .md-sidenav-left.md-whiteframe-11dp.ng-isolate-scope md-content #menu-list li .md-primary.text-button.md-button {
-        font-size: 1.6em;
+        font-size: 1.9em;
         line-height: 11vh;
         font-family: "futura-pt";
         font-weight: 300;

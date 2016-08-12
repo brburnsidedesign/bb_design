@@ -113,13 +113,18 @@ $browser-context: 16; // Default
 				font-family: "futura-pt";
 				text-align: justify;
 				h5 {
-					font-size: em(28);
+					font-size: em(32);
+					font-weight: lighter;
 				}
 				h6 {
 					color: darkgrey;
+					margin-top: -1em;
+					margin-bottom: 1.5em;
+					font-weight: light;
+					font-size: em(16);
 				}
 				p {
-					line-height: em(25);
+					line-height: em(30);
 				}
 			}
 			.project-pics {
@@ -151,21 +156,26 @@ $browser-context: 16; // Default
 				font-family: "futura-pt";
 				text-align: justify;
 				h5 {
-					font-size: em(28);
+					font-size: em(32);
+					font-weight: lighter;
 				}
 				h6 {
 					color: darkgrey;
+					margin-top: -1em;
+					margin-bottom: 1.5em;
+					font-weight: light;
+					font-size: em(16);
 				}
 				p {
-					line-height: em(25);
+					line-height: em(30);
 				}
 			}
 			.project-pics {
 				width: 63%;
 				float: right;
-				margin-left: 5em;
-				margin-top: 5%;
-				margin-bottom: 3%;
+				margin-left: 8em !important;
+				margin-top: 2%;
+				// margin-bottom: 3%;
 				li {
 					display: block;
 					padding-right: 3em;
@@ -182,13 +192,18 @@ $browser-context: 16; // Default
 .up-arrow {
 	z-index: 100;
 	float: right;
-	margin-top: 1em;
-	margin-right: 2em;
+	margin-top: 5em;
+	margin-right: 4em;
 	color: white;
 	background-color: dimgrey;
 	&:hover {
 		color: #00c3ff;
 	}
+}
+
+.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button.up-arrow.ng-isolate-scope {
+	margin-top: 1em !important;
+	margin-right: 1em;
 }
 
 ////////////////////// MEDIA-QUERIES //////////////////////

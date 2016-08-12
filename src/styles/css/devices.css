@@ -10,8 +10,12 @@
     margin-top: 1.7em; }
   .design-box {
     margin-left: 8em !important; }
-  .clay-main-view {
-    margin-left: 1em !important; }
+  .clay-main-view .row {
+    margin-left: 3em !important; }
+  .clay-ind-text {
+    margin-left: 1.5em !important; }
+  .clay-ind-images {
+    padding-top: 3em !important; }
   .contact-info .right-info p {
     font-size: 1.125em; }
   .contact-info .left-info {
@@ -50,6 +54,10 @@
       overflow-x: hidden !important; }
   .clay-main-view .row {
     margin-left: -1.5em; }
+  .clay-ind-text {
+    margin-left: 1.5em !important; }
+  .clay-ind-images {
+    padding-top: 3em !important; }
   .mdl-grid {
     margin-left: -0.75em !important; }
   .about-main-view {

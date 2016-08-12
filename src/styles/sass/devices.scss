@@ -29,9 +29,17 @@ $browser-context: 16; // Default
 	}
 
 	.clay-main-view {
-		margin-left: 1em !important;
 		.row {
+			margin-left: 3em !important;
 		}
+	}
+
+	.clay-ind-text {
+		margin-left: 1.5em !important;
+	}
+
+	.clay-ind-images {
+		padding-top: 3em !important;
 	}
 
 	.contact-info {
@@ -94,11 +102,18 @@ $browser-context: 16; // Default
 		}
 	}
 
-
 	.clay-main-view {
 		.row {
 			margin-left: -1.5em;
 		}
+	}
+
+	.clay-ind-text {
+		margin-left: 1.5em !important;
+	}
+
+	.clay-ind-images {
+		padding-top: 3em !important;
 	}
 
 	.mdl-grid {
