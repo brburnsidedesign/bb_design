@@ -80,7 +80,7 @@ gulp.task('copyFiles', function () {
         .pipe(ngAnnotate())
 				.pipe(uglify())
 				.pipe(concat('app.min.js'))
-        .pipe(gulp.dest(paths.buildApp));
+        .pipe(gulp.dest('build/app/core/'));
 
     var appStyles = gulp.src('src/styles/css/*.css')
         .pipe(sass.sync({
