@@ -1,51 +1,45 @@
-$browser-context: 16; // Default
+$browser-context: 16;
 
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }
 
 .chalk-main-view {
-	margin-top: 3em;
-	margin-bottom: 3em;
+	text-align: center;
 	.row {
-		list-style-type: none;
 		width: 100%;
-		padding: 0;
-		text-align: center;
+		margin-top: 1em;
 		div {
-			margin: 0 auto;
-			.chalk-img {
-				display: inline-block;
-				margin: auto 1vw 2em 2.3em;
-				position: relative;
-				width: em(450);
-				height: em(470);
-				position: center;
-				overflow: hidden;
-				background-repeat: no-repeat !important;
-				background-size: 450px 480px !important;
-				a {
-					#overlay {
-						background: rgba(255,255,255,0.6);
-						overflow: auto;
-						text-align: center;
-						vertical-align: middle;
-						padding:  9px 15% 50px 2.5%;
-						margin: 0 20px 0 -20px;
-						position: relative;
-						display: inline-block;
-						opacity:0;
+			#chalk-list {
+				width: 80%;
+				margin: 0 10%;
+				position: absolute;
+				text-align: center;
+				li {
+					width: 100%;
+					.chalk-img {
 						height: auto;
-						width: 130%;
-						-webkit-transition: opacity .25s ease;
-						-moz-transition: opacity .25s ease;
-						#overlay-text {
-							font-family:'futura-pt';
-							font-weight: 300;
-							color: hotpink;
-							font-size: em(60);
-							line-height: 80px;
-							text-decoration: none !important;
+						width: 50%;
+						margin-bottom: 5em;
+						float: left;
+						margin-right: 2em;
+						transition: all .2s ease-in-out;
+						// &:hover {
+						// 	transform: scale(1.05);
+						// 	cursor: pointer;
+						// }
+					}
+					h2 {
+						text-align: left;
+						display: block;
+						font-weight: lighter;
+						font-family: "futura-pt";
+						float: right;
+						font-size: em(23);
+						margin-right: 8em;
+						margin-top: 1em;
+						small {
+							margin-bottom: 8em;
 						}
 					}
 				}
@@ -53,23 +47,30 @@ $browser-context: 16; // Default
 		}
 	}
 }
-.col-xs-12.col-md-3.portfolio-item.chalk-img:hover #overlay {
-	opacity: 1;
-}
+
 
 
 ////////////////////// MEDIA-QUERIES
-@media (min-width: em(767)) and (max-width: em(991)) {
+@media (min-width: em(450)) and (max-width: em(850)) {
+	#chalk-list {
+		h2 {
+			margin-right: 0em !important;
+			font-size: em(17);
+		}
+	}
 };
 
-@media (min-width: em(991)) and (max-width: em(1200)) {
-};
-
-@media (min-width: em(1200)) and (max-width: em(1300)) {
-};
-
-@media (min-width: em(1300)) and (max-width: em(1600)) {
-};
-
-@media (min-width: em(1600)) {
+@media (max-width: em(450)) {
+	#chalk-list {
+		margin-top: 3em;
+		li {
+			h2 {
+				display: none !important;
+			}
+			img {
+				height: 18em !important;
+				width: 18em !important;
+			}
+		}
+	}
 };

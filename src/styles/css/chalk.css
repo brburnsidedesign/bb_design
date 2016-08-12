@@ -1,44 +1,44 @@
 .chalk-main-view {
-  margin-top: 3em;
-  margin-bottom: 3em; }
+  text-align: center; }
   .chalk-main-view .row {
-    list-style-type: none;
     width: 100%;
-    padding: 0;
-    text-align: center; }
-    .chalk-main-view .row div {
-      margin: 0 auto; }
-      .chalk-main-view .row div .chalk-img {
-        display: inline-block;
-        margin: auto 1vw 2em 2.3em;
-        position: relative;
-        width: 28.125em;
-        height: 29.375em;
-        position: center;
-        overflow: hidden;
-        background-repeat: no-repeat !important;
-        background-size: 450px 480px !important; }
-        .chalk-main-view .row div .chalk-img a #overlay {
-          background: rgba(255, 255, 255, 0.6);
-          overflow: auto;
-          text-align: center;
-          vertical-align: middle;
-          padding: 9px 15% 50px 2.5%;
-          margin: 0 20px 0 -20px;
-          position: relative;
-          display: inline-block;
-          opacity: 0;
+    margin-top: 1em; }
+    .chalk-main-view .row div #chalk-list {
+      width: 80%;
+      margin: 0 10%;
+      position: absolute;
+      text-align: center; }
+      .chalk-main-view .row div #chalk-list li {
+        width: 100%; }
+        .chalk-main-view .row div #chalk-list li .chalk-img {
           height: auto;
-          width: 130%;
-          -webkit-transition: opacity .25s ease;
-          -moz-transition: opacity .25s ease; }
-          .chalk-main-view .row div .chalk-img a #overlay #overlay-text {
-            font-family: 'futura-pt';
-            font-weight: 300;
-            color: hotpink;
-            font-size: 3.75em;
-            line-height: 80px;
-            text-decoration: none !important; }
+          width: 50%;
+          margin-bottom: 5em;
+          float: left;
+          margin-right: 2em;
+          transition: all .2s ease-in-out; }
+        .chalk-main-view .row div #chalk-list li h2 {
+          text-align: left;
+          display: block;
+          font-weight: lighter;
+          font-family: "futura-pt";
+          float: right;
+          font-size: 1.4375em;
+          margin-right: 8em;
+          margin-top: 1em; }
+          .chalk-main-view .row div #chalk-list li h2 small {
+            margin-bottom: 8em; }
 
-.col-xs-12.col-md-3.portfolio-item.chalk-img:hover #overlay {
-  opacity: 1; }
+@media (min-width: 28.125em) and (max-width: 53.125em) {
+  #chalk-list h2 {
+    margin-right: 0em !important;
+    font-size: 1.0625em; } }
+
+@media (max-width: 28.125em) {
+  #chalk-list {
+    margin-top: 3em; }
+    #chalk-list li h2 {
+      display: none !important; }
+    #chalk-list li img {
+      height: 18em !important;
+      width: 18em !important; } }

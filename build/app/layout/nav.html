@@ -1,0 +1,33 @@
+<div ng-controller="NavCtrl" layout="column" ng-cloak class="nav-main-view">
+  <section layout="row" flex>
+		<md-button styles="z-index: 1000;" md-no-ink="" ng-click="toggleLeft()"  class="md-primary" aria-label="Menu" style="top: 0em;" id="sidebarButtonCase">
+				<img id="bbd-logo" src="./assets/img/bbd_logo.png" alt="bbd logo">
+		</md-button>
+		<h1 id="bbd-headline">Brooke Burnside: Visual Artist <span>|</span> Designer</h1>
+    <md-sidenav class="md-sidenav-left md-whiteframe-11dp" md-component-id="left" >
+      <md-content ng-controller="LeftCtrl" layout-padding>
+				<ul id="menu-list">
+					<li><md-button smooth-scroll ui-sref="/" ng-click="close()" class="md-primary text-button" md-ink-ripple="false" aria-label="home button">
+						<img id="bbd-logo-open" src="./assets/img/bbd_logo.png" alt="bbdd logo">
+					</md-button></li>
+					<li><md-button smooth-scroll ui-sref="clay" ng-click="close()" class="md-primary text-button" md-ink-ripple="false">
+						~ clay ~
+					</md-button></li>
+					<li><md-button smooth-scroll ui-sref="chalk" ng-click="close()" class="md-primary text-button" md-ink-ripple="false">
+						~ chalk ~
+					</md-button></li>
+					<li><md-button smooth-scroll ui-sref="design" ng-click="close()" class="md-primary text-button" md-ink-ripple="false">
+						~ design ~
+					</md-button></li>
+					<li><md-button smooth-scroll ui-sref="about" ng-click="close()" class="md-primary text-button" md-ink-ripple="false">
+						about
+					</md-button></li>
+					<li><md-button smooth-scroll ui-sref="contact" ng-click="close()" class="md-primary text-button" md-ink-ripple="false">
+						contact
+					</md-button></li>
+				</ul>
+      </md-content>
+    </md-sidenav>
+
+  </section>
+</div>

@@ -23,15 +23,16 @@ $browser-context: 16; // Default
 			.about-text {
 				position: fixed;
 				float: left;
-				width: 40%;
+				width: 50%;
 				margin-top: 15vh;
-				margin-left: 2em;
 				clear: none;
 				p {
+					width: 80%;
 					font-family: "futura-pt";
 					font-weight: 100;
-					font-size: em(20);
+					font-size: em(25);
 					text-align: center;
+					margin: 0 6%;
 					a {
 						color: hotpink !important;
 						&:hover {
@@ -68,6 +69,8 @@ $browser-context: 16; // Default
 					height: auto;
 					margin-top: 1em;
 					p {
+						width: 100%;
+						margin: 0 3%;
 					}
 				}
 				.about-image {

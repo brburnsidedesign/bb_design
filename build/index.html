@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="title" content="brookeburnside.com">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="./src/assets/img/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
 
 		<script src="https://use.typekit.net/dus8hki.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -26,9 +26,25 @@
 		<meta property="og:site_name" content="Brooke Burnside: Designer &amp; Ceramic Artist">
 		<meta property="og:type" content="website">
 
-		<!-- STYLES LIBS -->
-		<!-- <link rel="stylesheet" type="text/css" href="build/libs/libs.min.css"> -->
+		<!-- vendorInject:css -->
+		<!-- endinject -->
+		<!-- stylesInject:css -->
+		<link rel="stylesheet" href="styles/about.css">
+		<link rel="stylesheet" href="styles/chalk.css">
+		<link rel="stylesheet" href="styles/clay.css">
+		<link rel="stylesheet" href="styles/contact.css">
+		<link rel="stylesheet" href="styles/custom.css">
+		<link rel="stylesheet" href="styles/design.css">
+		<link rel="stylesheet" href="styles/devices.css">
+		<link rel="stylesheet" href="styles/home.css">
+		<link rel="stylesheet" href="styles/media_queries.css">
+		<link rel="stylesheet" href="styles/pastel.css">
+		<link rel="stylesheet" href="styles/reset.css">
+		<link rel="stylesheet" href="styles/shared.css">
+		<link rel="stylesheet" href="styles/styles.css">
+		<!-- endinject -->
 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.css" />
@@ -37,12 +53,10 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
 
-		<!-- STYLES (COMPRESSED)-->
-		<link rel="stylesheet" type="text/css" href="build/styles/css/app.min.css">
 
 	</head>
 	<body ng-controller="AppCtrl">
-		<div ng-include="'build/views/layout/nav.html'"></div>
+		<div ng-include="'/app/layout/nav.html'"></div>
 		<main ui-view ng-animate="'view'"></main>
 
 		<!-- JS Libs-->
@@ -56,10 +70,14 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-toastr/1.7.0/angular-toastr.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.0/angular-scroll.min.js"></script>
-
-		<!-- SCRIPTS -->
-		<script type="text/javascript" src="build/js/app.min.js"></script>
 		<script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+
+		<!-- vendorInject:js -->
+		<!-- endinject -->
+		<!-- inject:js -->
+		<script src="app/app.min.js"></script>
+		<!-- endinject -->
+
 
 	</body>
 </html>

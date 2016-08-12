@@ -74,11 +74,16 @@
     font-family: "futura-pt";
     text-align: justify; }
     .project-individual-sections .row .black-section .design-solo-words h5 {
-      font-size: 1.75em; }
+      font-size: 2em;
+      font-weight: lighter; }
     .project-individual-sections .row .black-section .design-solo-words h6 {
-      color: darkgrey; }
+      color: darkgrey;
+      margin-top: -1em;
+      margin-bottom: 1.5em;
+      font-weight: light;
+      font-size: 1em; }
     .project-individual-sections .row .black-section .design-solo-words p {
-      line-height: 1.5625em; }
+      line-height: 1.875em; }
   .project-individual-sections .row .black-section .project-pics {
     width: 55%;
     float: right;
@@ -105,17 +110,21 @@
     font-family: "futura-pt";
     text-align: justify; }
     .project-individual-sections .row .white-section .design-solo-words h5 {
-      font-size: 1.75em; }
+      font-size: 2em;
+      font-weight: lighter; }
     .project-individual-sections .row .white-section .design-solo-words h6 {
-      color: darkgrey; }
+      color: darkgrey;
+      margin-top: -1em;
+      margin-bottom: 1.5em;
+      font-weight: light;
+      font-size: 1em; }
     .project-individual-sections .row .white-section .design-solo-words p {
-      line-height: 1.5625em; }
+      line-height: 1.875em; }
   .project-individual-sections .row .white-section .project-pics {
     width: 63%;
     float: right;
-    margin-left: 5em;
-    margin-top: 5%;
-    margin-bottom: 3%; }
+    margin-left: 8em !important;
+    margin-top: 2%; }
     .project-individual-sections .row .white-section .project-pics li {
       display: block;
       padding-right: 3em; }
@@ -126,12 +135,16 @@
 .up-arrow {
   z-index: 100;
   float: right;
-  margin-top: 1em;
-  margin-right: 2em;
+  margin-top: 5em;
+  margin-right: 4em;
   color: white;
   background-color: dimgrey; }
   .up-arrow:hover {
     color: #00c3ff; }
+
+.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button.up-arrow.ng-isolate-scope {
+  margin-top: 1em !important;
+  margin-right: 1em; }
 
 @media (max-width: 25em) {
   .design-main-view .row .design-box {
