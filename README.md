@@ -1,2 +1,1 @@
-
-'smoothScroll'
+Brooke Burnside Portfolio Site
