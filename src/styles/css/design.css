@@ -1,7 +1,7 @@
 .design-main-view .row {
-  width: 50%; }
+  width: 60%; }
   .design-main-view .row .design-box {
-    margin-left: 50%;
+    margin-left: 100%;
     margin-top: 8em;
     background-color: #00c3ff;
     width: 30em;
@@ -148,9 +148,13 @@
 
 @media (max-width: 25em) {
   .design-main-view .row .design-box {
-    margin-left: 1.5em !important; }
+    margin-left: 11.5vw !important; }
   .design-project-view div a .mdl-card.mdl-cell.mdl-cell--6-col.mdl-cell--4-col-tablet.mdl-shadow--4dp {
     margin-left: 2em; } }
+
+@media (min-width: 25.0625em) and (max-width: 47.9375em) {
+  .design-main-view .row .design-box {
+    margin-left: 18vw !important; } }
 
 @media (max-width: 35em) {
   .design-main-view .row .design-box {

@@ -122,30 +122,103 @@ $browser-context: 16; // Default
 
 // // // // // // MEDIA-QUERIES MAIN CLAY GALLERY
 
-@media (max-width: em(767)) {
+@media (max-width: em(450)) {
+
 	.clay-main-view {
 		width: 100%;
+		padding-top: -10em !important;
 		.row {
+			margin-top: -7em !important;
 			text-align: center;
-			margin-bottom: 3em !important;
+			margin-bottom: 0em !important;
 			.portfolio-item {
-				margin: 0 auto !important;
+				margin: 0 auto -9em auto !important;
 			}
 		}
 	}
 
 	#clay-gallery-img {
 		margin-right: -1em !important;
-		margin-left: 4em !important;
-		width: 75% !important;
-		height: em(595) !important;
-		background-size: cover !important;
+		margin-left: 1em !important;
+		width: 95% !important;
+		height: em(575) !important;
+		background-size: 90% !important;
 		background-position: center center !important;
 		#overlay {
-			width: em(100%) !important;
-			height: em(595) !important;
+			margin-top: 4.3em !important;
+			padding-top: 25% !important;
+			width: em(95%) !important;
+			height: em(420) !important;
+			padding-right: 22% !important;
+			#overlay-text {
+				line-height: em(40) !important;
+				font-size: em(45) !important;
+			}
+		}
+	}
+
+}
+
+@media (min-width: em(450)) and (max-width: em(550)) {
+	.clay-main-view {
+		width: 100%;
+		.row {
+			text-align: center;
+			margin-bottom: 0em !important;
+			.portfolio-item {
+				margin: 0 auto 2em auto !important;
+			}
+		}
+	}
+
+	#clay-gallery-img {
+		margin-right: -1em !important;
+		margin-left: 1em !important;
+		width: 95% !important;
+		height: em(575) !important;
+		background-size: 90% !important;
+		background-position: center center !important;
+		#overlay {
+			width: em(95%) !important;
+			height: em(575) !important;
 			padding-top: 20% !important;
-			// padding-left: 10% !important;
+			padding-right: 26% !important;
+			#overlay-text {
+				line-height: em(40) !important;
+				font-size: em(65) !important;
+			}
+		}
+	}
+
+	#overlay.short-title {
+		margin-top: 0em !important;
+	}
+}
+
+@media (min-width: em(550)) and (max-width: em(767)) {
+	.clay-main-view {
+		width: 100%;
+		.row {
+			text-align: center;
+			margin-bottom: 1em !important;
+			.portfolio-item {
+				margin: 0 auto 2em auto !important;
+			}
+		}
+	}
+
+	#clay-gallery-img {
+		margin-right: -1em !important;
+		margin-left: 1em !important;
+		width: 95% !important;
+		height: em(575) !important;
+		background-size: 90% !important;
+		background-position: center center !important;
+		#overlay {
+			width: em(95%) !important;
+			height: em(575) !important;
+			padding-top: 10% !important;
+			padding-right: 26% !important;
 			#overlay-text {
 				line-height: em(40) !important;
 				font-size: em(65) !important;
@@ -160,56 +233,28 @@ $browser-context: 16; // Default
 
 @media (min-width: em(767)) and (max-width: em(991)) {
 	.clay-main-view {
-		width: 100%;
+		width: 50%;
 		.row {
 			text-align: center;
-			margin: 3em 5em;
+			margin: 1em 4% !important;
+			width: 100%;
 			.portfolio-item {
 				margin: 0 auto;
 			}
 		}
 	}
 
-	#clay-gallery-img {
-		margin-bottom: 5em !important;
+	.portfolio-item {
+		margin: auto 1em 2em auto !important;
 	}
 };
-
-@media (min-width: em(767)) and (max-width: em(991)) {
-	#clay-gallery-img {
-		margin-right: -1em !important;
-		margin-left: 4em !important;
-		width: 75% !important;
-		height: em(595) !important;
-		background-size: cover !important;
-		background-position: center center !important;
-		#overlay {
-			width: em(80%) !important;
-			height: em(595) !important;
-			padding-top: 20% !important;
-			// padding-left: 10% !important;
-			#overlay-text {
-				line-height: em(40) !important;
-				font-size: em(65) !important;
-			}
-		}
-	}
-
-	#overlay.short-title {
-		margin-top: 0em !important;
-	}
-
-	.dv {
-		margin-right: 13em !important;
-	}
-}
 
 @media (min-width: em(991)) and (max-width: em(1100)) {
 	.clay-main-view {
 		width: 100%;
 		.row {
 			text-align: center;
-			margin: 0 1.5em;
+			margin: 0 1.95em;
 			.portfolio-item {
 				margin: auto 4vw 2em 2.3em;
 			}
@@ -251,6 +296,33 @@ $browser-context: 16; // Default
 		}
 	}
 };
+
+@media (min-width: em(1200)) and (max-width: em(1285)) {
+	.clay-main-view {
+		div.row {
+			margin-left: 0.75em !important;
+		}
+	}
+}
+
+@media (min-width: em(1400)) and (max-width: em(1650)) {
+	.portfolio-item {
+		margin: auto 4vw 2em auto !important;
+	}
+}
+
+@media (min-width: em(1650)) {
+	.clay-main-view {
+		width: 90% !important;
+		.row {
+			margin-left: 8% !important;
+		}
+	}
+
+	.portfolio-item {
+		margin: auto 6vw 2.5em auto !important;
+	}
+}
 
 
 /**********CLAY INDIVIDUAL GALLERY**************/

@@ -35,6 +35,7 @@ $browser-context: 16; // Default
 					margin: 0 6%;
 					a {
 						color: hotpink !important;
+						font-weight: lighter;
 						&:hover {
 							text-decoration: none;
 							color: #00c3ff !important;
