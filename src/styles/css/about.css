@@ -25,7 +25,8 @@
       text-align: center;
       margin: 0 6%; }
       .about-main-view .row div .about-text p a {
-        color: hotpink !important; }
+        color: hotpink !important;
+        font-weight: lighter; }
         .about-main-view .row div .about-text p a:hover {
           text-decoration: none;
           color: #00c3ff !important; }
