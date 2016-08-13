@@ -52,8 +52,15 @@
       overflow-x: hidden !important; }
     .project-individual-sections .white-section {
       overflow-x: hidden !important; }
+  .chalk-main-view .row {
+    margin-top: 5em !important;
+    margin-left: -2em !important; }
   .clay-main-view .row {
-    margin-left: -1.5em; }
+    margin-left: -1.25em !important;
+    margin-top: -6em !important; }
+  .ovl-small {
+    margin-top: 10em !important;
+    margin-bottom: 10em !important; }
   .clay-ind-text {
     margin-left: 1.5em !important; }
   .clay-ind-images {
@@ -73,7 +80,7 @@
           margin-top: -1em !important;
           margin-bottom: 0em !important; }
   .design-main-view .row .col-xs-12.design-box {
-    margin-left: 0.75em !important;
+    margin-left: 2.5em !important;
     margin-top: 3em !important; }
   .contact-info .right-info p {
     font-size: 1.125em; }
