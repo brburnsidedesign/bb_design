@@ -222,10 +222,9 @@
     .design-project-view div a .mdl-card.mdl-cell.mdl-cell--6-col.mdl-cell--4-col-tablet.mdl-shadow--4dp {
       margin-right: 0.5em !important; } }
 
-@media (min-width: 61.9375em) and (max-width: 75em) {
-  .project-pics {
-    margin-right: -8em !important;
-    margin-top: 2em !important; } }
+@media (min-width: 61.9375em) and (max-width: 81.25em) {
+  .design-main-view .row .design-box {
+    margin-left: 55% !important; } }
 
 @media (min-width: 65.625em) and (max-width: 75em) {
   .design-project-view {

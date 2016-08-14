@@ -34,6 +34,7 @@ angular.module('app').controller('ImgCtrl', ['$scope', 'preloader', function($sc
 		'./assets/img/11.jpg',
 		'./assets/img/12.jpg',
 		'./assets/img/13.jpg',
+		'./assets/img/bb_action.jpg'
 	];
 
 	preloader.preloadImages( $scope.imgLocations );

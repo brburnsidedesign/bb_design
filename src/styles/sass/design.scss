@@ -360,11 +360,15 @@ $browser-context: 16; // Default
 
 };
 
-@media (min-width: em(991)) and (max-width: em(1200)) {
-	.project-pics {
-		margin-right: -8em !important;
-		margin-top: 2em !important;
+@media (min-width: em(991)) and (max-width: em(1300)) {
+	.design-main-view {
+		.row {
+			.design-box {
+				margin-left: 55% !important;
+			}
+		}
 	}
+
 
 };
 
