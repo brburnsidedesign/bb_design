@@ -38,6 +38,7 @@ var paths = {
 };
 
 	gulp.task('default', ['watch', 'sass', 'browser-sync', 'nodemon']);
+	gulp.task('production-build', ['watch', 'sass', 'browser-sync', 'nodemon', 'images']);
 
 	gulp.task('watch', ['serve'], function () {
 	    gulp.watch(paths.markupSrc, ['copyFiles']);
