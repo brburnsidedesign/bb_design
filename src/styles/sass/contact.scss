@@ -48,8 +48,8 @@ $browser-context: 16; // Default
 				}
 			}
 			#social-icons {
-				margin-top: 9em;
 				position: fixed;
+				margin-top: 10em;
 				li {
 					margin-bottom: 1em;
 					display: inline-block;
@@ -77,13 +77,13 @@ $browser-context: 16; // Default
 			background-color: #00c3ff;
 			color: white;
 			float: right;
-			padding-top: 17.75%;
+			padding-top: 18.4%;
 			p {
 				float: right;
-				line-height: em(34);
+				line-height: em(25);
 				font-family: "futura-pt";
 				font-style: italic;
-				font-size: em(23);
+				font-size: em(22);
 				text-align: right;
 				width: 50%;
 				margin-bottom: 2em;
