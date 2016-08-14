@@ -58,7 +58,7 @@
 	</head>
 	<body ng-controller="AppCtrl">
 		<div ng-include="'/app/layout/nav.html'"></div>
-		<main ui-view ng-animate="'view'"></main>
+		<main ui-view ng-animate="'view'" ng-controller="ImgCtrl"></main>
 
 		<!-- JS Libs-->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
