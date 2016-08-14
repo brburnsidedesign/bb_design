@@ -40,6 +40,8 @@
       margin-bottom: 3em; }
       .design-project-view div a .mdl-card.mdl-cell.mdl-cell--6-col.mdl-cell--4-col-tablet.mdl-shadow--4dp:hover {
         transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         cursor: pointer; }
       .design-project-view div a .mdl-card.mdl-cell.mdl-cell--6-col.mdl-cell--4-col-tablet.mdl-shadow--4dp:focus {
         outline: none; }
