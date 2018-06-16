@@ -4,18 +4,19 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "gulp watch"
   },
   "author": "Will Barbee",
   "license": "ISC",
-	"devDependencies": {
+  "devDependencies": {
     "angular-messages": "^1.5.7",
     "angular-toastr": "^1.7.0",
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.24.4",
     "bs-html-injector": "^3.0.2",
     "del": "^2.2.1",
     "gulp": "^3.9.1",
-    "gulp-angular-filesort": "^1.1.1",
+    "gulp-angular-filesort": "^1.2.1",
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^3.0.2",
     "gulp-inject": "^4.1.0",
@@ -37,7 +38,7 @@
     "jquery": "^3.1.0",
     "morgan": "^1.7.0",
     "path": "^0.12.7",
-    "request": "^2.74.0",
+    "request": "^2.87.0",
     "serve-favicon": "^2.3.0",
     "serve-index": "^1.8.0"
   }
