@@ -8,17 +8,16 @@ $browser-context: 16; // Default
 
 /////HOME
 .home-view {
-	overflow: hidden;
-	.row {
-		.main-home-image {
-			margin-top: 0em;
-			height: 92vh;
-			background-image: url('../../assets/img/clay_close_1_brighter.jpg');
-			background-size: cover;
-			-moz-background-size: cover;
-		  -webkit-background-size: cover;
-			background-position: center center;
-			background-repeat: no-repeat;
-		}
-	}
+  overflow: hidden;
+  .main-home-image {
+    overflow: hidden;
+    margin-top: 0;
+    height: calc(100vh - 84px);
+    background-image: url('../../assets/img/clay_close_1_brighter.jpg');
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }

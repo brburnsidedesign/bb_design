@@ -1,7 +1,7 @@
 (function (r) {
     "use strict";
 
-var gulp 					= r('gulp'),
+const gulp 					= r('gulp'),
 		htmlInjector 		= r('bs-html-injector'),
   	plumber 				= r('gulp-plumber'),
   	webserver 			= r('gulp-webserver'),
@@ -18,7 +18,7 @@ var gulp 					= r('gulp'),
 		reload 					= browserSync.reload;
 
 
-var paths = {
+const paths = {
     build : 'build/',
     buildImgs: 'build/assets/img/',
 		buildFonts: 'build/assets/fonts/',

@@ -15,8 +15,9 @@ main {
   height: 6em; }
 
 button#sidebarButtonCase {
-  margin-top: 0.4em;
-  margin-left: 2em; }
+  margin-top: 0;
+  margin-left: 2rem;
+  margin-right: -0.15rem; }
   button#sidebarButtonCase:hover, button#sidebarButtonCase:focus {
     outline: none !important;
     background-color: transparent; }
@@ -92,7 +93,7 @@ md-sidenav.md-closed.md-locked-open-add-active {
       text-align: center; }
       .md-sidenav-left.md-whiteframe-11dp.ng-isolate-scope md-content #menu-list li .md-primary.text-button.md-button {
         font-size: 1.9em;
-        line-height: 11vh;
+        line-height: 9.5vh;
         font-family: "futura-pt";
         font-weight: 300;
         color: black; }

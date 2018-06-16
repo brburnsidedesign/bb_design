@@ -29,8 +29,9 @@ main {
 }
 
 button#sidebarButtonCase {
-	margin-top: 0.4em;
-	margin-left: 2em;
+	margin-top: 0;
+	margin-left: 2rem;
+	margin-right: -0.15rem;
 	&:hover, &:focus {
 		outline: none !important;
 		background-color: transparent;
@@ -129,7 +130,7 @@ md-sidenav.md-closed.md-locked-open-add-active {
 			li {
 				.md-primary.text-button.md-button {
 					font-size: 1.9em;
-					line-height: 11vh;
+					line-height: 9.5vh;
 					font-family: "futura-pt";
 					font-weight: 300;
 					color: black;
