@@ -7,6 +7,7 @@ $browser-context: 16; // Default
 /*************NG ANIMATE***********/
 
 main {
+	overflow-x: hidden !important;
     /* start 'enter' transition */
     &.ng-enter {
         /* transition on enter for .5s */
@@ -165,7 +166,7 @@ md-sidenav.md-closed.md-locked-open-add-active {
 @media (max-width: em(565)) {
 	#bbd-headline {
 		margin-top: 1.5em;
-		font-size: 1.35em;
+		font-size: 1.3em;
 		margin-left: 1rem;
 		font-family: "futura-pt";
 		font-weight: lighter;
