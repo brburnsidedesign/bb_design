@@ -8,6 +8,7 @@ $browser-context: 16; // Default
 
 div.shop-main-view {
   padding-top: 0;
+  padding-bottom: 8rem;
   overflow-x: hidden !important;
   div.inner-shop-main {
     width: 95%;
@@ -113,6 +114,16 @@ div.shop-main-view {
             width: 22rem !important;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-height: 750px) {
+  div.shop-main-view {
+    div.inner-shop-main {
+      hr {
+        margin-top: 0.5rem !important;
       }
     }
   }
