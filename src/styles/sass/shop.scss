@@ -127,7 +127,7 @@ div.individual-sale-piece {
     margin: 0 auto;
     div.indiv-shop-text {
       max-width: 30rem;
-      width: 95%;
+      width: 65%;
       margin: -2rem auto;
       h2 {
         font-size: 20px;
@@ -136,6 +136,9 @@ div.individual-sale-piece {
         &.price-for-piece {
           font-size: 18px;
           margin-bottom: 0;
+        }
+        &.piece-title {
+          font-size: 25px;
         }
       }
       h3 {
@@ -146,6 +149,13 @@ div.individual-sale-piece {
         font-weight: 300;
         margin-top: 2.25rem;
         margin-bottom: -1rem;
+      }
+      hr {
+        width: 75%;
+        max-width: 45rem;
+        border-color: whitesmoke;
+        margin-top: 2.75rem;
+        margin-bottom: -1.5rem;
       }
       p {
         text-align: left;
@@ -208,7 +218,7 @@ div.individual-sale-piece {
         float: right;
         img {
           max-width: 30rem;
-          margin-left: 7rem;
+          margin-left: 9rem;
         }
       }
     }
@@ -233,7 +243,7 @@ div.individual-sale-piece {
         float: right;
         img {
           width: 25rem;
-          margin: 0 2rem;
+          margin: 0 4rem;
         }
       }
     }

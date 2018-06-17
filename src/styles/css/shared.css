@@ -31,7 +31,7 @@ button#sidebarButtonCase {
   height: auto;
   width: 4em;
   margin-left: -2em;
-  margin-top: 0em; }
+  margin-top: 0; }
   #bbd-logo:focus {
     outline: none !important; }
   #bbd-logo:hover {
@@ -51,8 +51,8 @@ button#sidebarButtonCase {
 #bbd-logo-open {
   height: auto;
   width: 2.5em;
-  padding-top: 1.5em;
-  margin: 0 0 1em 0; }
+  padding-top: 0.75em;
+  margin: 0 0 0.25em 0; }
   #bbd-logo-open:hover {
     opacity: 0.6; }
 
