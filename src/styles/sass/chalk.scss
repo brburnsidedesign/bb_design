@@ -16,6 +16,8 @@ $browser-context: 16;
         position: absolute;
         text-align: center;
         li {
+          display: block;
+          clear: right;
           width: 100%;
           transition: all .2s ease-in-out;
           &:focus, &:active {
@@ -26,7 +28,7 @@ $browser-context: 16;
             height: auto;
             width: 50%;
             margin-bottom: 5em;
-            float: left;
+            float: none;
             margin-right: 2em;
             transition: all .2s ease-in-out;
             &:focus, &:active {
