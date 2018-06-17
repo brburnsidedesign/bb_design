@@ -8,6 +8,7 @@ $browser-context: 16; // Default
 
 div.shop-main-view {
   padding-top: 0;
+  overflow-x: hidden !important;
   div.inner-shop-main {
     width: 95%;
     max-width: 85rem;
@@ -31,7 +32,7 @@ div.shop-main-view {
       }
     }
     hr {
-      width: 95%;
+      width: 90%;
       max-width: 50rem;
       margin: 4rem auto -0.75rem;
       border-color: whitesmoke;
@@ -42,7 +43,7 @@ div.shop-main-view {
       line-height: 25px;
       font-weight: 300 !important;
       font-style: italic !important;
-      width: 95%;
+      width: 85%;
       max-width: 47rem;
       margin-left: auto;
       margin-right: auto;
@@ -121,6 +122,7 @@ div.shop-main-view {
 
 div.individual-sale-piece {
   padding-bottom: 8rem;
+  overflow-x: hidden !important;
   div.inner-shop-indiv {
     width: 95%;
     max-width: 75rem;

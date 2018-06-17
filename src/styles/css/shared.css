@@ -1,6 +1,5 @@
 /*************NG ANIMATE***********/
 main {
-  overflow-x: hidden !important;
   /* start 'enter' transition */
   /* end 'enter' transition */ }
   main.ng-enter {
@@ -109,7 +108,7 @@ md-sidenav.md-closed.md-locked-open-add-active {
   button#sidebarButtonCase {
     margin-left: 2em !important; }
     button#sidebarButtonCase img {
-      margin-left: 1em; } }
+      margin-left: 1.75em; } }
 
 @media (max-width: 35.3125em) {
   #bbd-headline {

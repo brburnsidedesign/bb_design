@@ -7,7 +7,6 @@ $browser-context: 16; // Default
 /*************NG ANIMATE***********/
 
 main {
-	overflow-x: hidden !important;
     /* start 'enter' transition */
     &.ng-enter {
         /* transition on enter for .5s */
