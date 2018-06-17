@@ -1,0 +1,241 @@
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+/**********SHOP MAIN GALLERY**************/
+
+div.shop-main-view {
+  padding-top: 0;
+  div.inner-shop-main {
+    width: 95%;
+    max-width: 85rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      tr {
+        width: 100%;
+        td {
+          display: block;
+          width: 22rem;
+          margin: 0 auto 2rem;
+          a {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    hr {
+      width: 95%;
+      max-width: 50rem;
+      margin: 4rem auto -0.75rem;
+      border-color: whitesmoke;
+    }
+    h3 {
+      margin-top: 2rem !important;
+      font-size: 18px !important;
+      line-height: 25px;
+      font-weight: 300 !important;
+      font-style: italic !important;
+      width: 95%;
+      max-width: 47rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      a {
+        color: #00bbff;
+        &:hover {
+          color: hotpink;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1100px) {
+  div.shop-main-view {
+    div.inner-shop-main {
+      table {
+        tr {
+          td {
+            width: 18rem !important;
+            &:first-of-type {
+              margin-right: 2vw;
+            }
+            &:last-of-type {
+              margin-left: 2vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  div.shop-main-view {
+    div.inner-shop-main {
+      max-width: 85rem;
+      table {
+        tr {
+          td {
+            display: inline-block;
+            &:first-of-type {
+              margin-right: 1.5vw;
+            }
+            &:last-of-type {
+              margin-left: 1.5vw;
+            }
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  div.shop-main-view {
+    div.inner-shop-main {
+      table {
+        tr {
+          td {
+            width: 22rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**********SHOP INDIVIDUAL ITEM**************/
+
+div.individual-sale-piece {
+  padding-bottom: 8rem;
+  div.inner-shop-indiv {
+    width: 95%;
+    max-width: 75rem;
+    margin: 0 auto;
+    div.indiv-shop-text {
+      max-width: 30rem;
+      width: 95%;
+      margin: -2rem auto;
+      h2 {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: -2rem;
+        &.price-for-piece {
+          font-size: 18px;
+          margin-bottom: 0;
+        }
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 27px;
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 2.25rem;
+        margin-bottom: -1rem;
+      }
+      p {
+        text-align: left;
+        margin-top: 0.5rem;
+        a {
+          button {
+            font-size: 13px;
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            font-weight: 300;
+            padding: 0.25rem 1.5rem;
+            &:hover {
+              background-color: #00bbff;
+              color: white;
+              font-weight: 500;
+              border-color: transparent;
+            }
+            &:focus, &:active {
+              outline: none;
+            }
+          }
+        }
+        &.back-to-shop {
+          margin-top: 2rem;
+          a {
+            color: grey;
+            &:hover {
+              color: #00bbff;
+            }
+          }
+        }
+      }
+    }
+    div.indiv-item-pic {
+      text-align: center;
+      img {
+        width: 85%;
+        max-width: 35rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  div.individual-sale-piece {
+    div.inner-shop-indiv {
+      width: 95%;
+      max-width: 65rem;
+      margin: 0 auto;
+      div.indiv-shop-text {
+        padding-top: 14vh;
+        float: left;
+        width: 40%;
+        margin: 0 auto;
+      }
+      div.indiv-item-pic {
+        margin-top: -3rem;
+        width: 60%;
+        float: right;
+        img {
+          max-width: 30rem;
+          margin-left: 7rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  div.individual-sale-piece {
+    div.inner-shop-indiv {
+      width: 95%;
+      max-width: 45rem;
+      margin: 0 auto;
+      padding-top: 3vh;
+      div.indiv-shop-text {
+        float: left;
+        padding-top: 10vh;
+        width: 40%;
+      }
+      div.indiv-item-pic {
+        margin-top: -3rem;
+        width: 60%;
+        float: right;
+        img {
+          width: 25rem;
+          margin: 0 2rem;
+        }
+      }
+    }
+  }
+}

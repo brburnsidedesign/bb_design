@@ -16,14 +16,13 @@ $browser-context: 16; // Default
 	  text-align: center;
 		margin: 0 auto;
 		.portfolio-item {
-		  display: inline-block;
-		  margin: auto 2em 2em 2.3em;
-		  position: relative;
-			width: em(250);
-			height: em(270);
-			position: center;
-			overflow: hidden;
-			background-repeat: no-repeat !important;
+          display: inline-block;
+          margin: auto 2em 2em 2.3em;
+          position: relative;
+          width: em(250);
+          height: em(270);
+          overflow: hidden;
+          background-repeat: no-repeat !important;
 		}
 	}
 }

@@ -12,6 +12,8 @@
   "devDependencies": {
     "angular-messages": "^1.5.7",
     "angular-toastr": "^1.7.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.24.4",
     "bs-html-injector": "^3.0.2",
     "del": "^2.2.1",
