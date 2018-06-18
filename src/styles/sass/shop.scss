@@ -22,14 +22,31 @@ div.shop-main-view {
         width: 100%;
         td {
           display: block;
-          width: 22rem;
+          width: 20rem;
+          height: 35rem;
           margin: 0 auto 2rem;
           a {
-            img {
+            width: 100%;
+            height: 100%;
+            div {
               width: 100%;
+              height: 100%;
+              background-position: center;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              &.item-1 {
+                background-image: url('/assets/img/terra-cotta.jpg');
+              }
+              &.item-2 {
+                background-image: url('/assets/img/shadows_main.jpg');
+              }
+              &.item-3 {
+                background-image: url('/assets/img/tubes_main.jpg');
+              }
             }
           }
         }
+
       }
     }
     hr {
@@ -67,6 +84,20 @@ div.shop-main-view {
         tr {
           td {
             width: 18rem !important;
+            &.wider-than-tall {
+              width: 25rem !important;
+              height: 17rem !important;
+            }
+            &.smaller-piece {
+              width: 20rem !important;
+              height: 24rem !important;
+              vertical-align: -5.5rem !important;
+            }
+            &.variation-3 {
+              width: 22rem !important;
+              height: 22rem !important;
+              vertical-align: -3.5rem;
+            }
             &:first-of-type {
               margin-right: 2vw;
             }
@@ -88,6 +119,19 @@ div.shop-main-view {
         tr {
           td {
             display: inline-block;
+            &.wider-than-tall {
+              width: 27rem !important;
+            }
+            &.smaller-piece {
+              vertical-align: 5.5rem;
+              width: 15rem !important;
+              height: 23.5rem !important;
+              margin-left: 1rem;
+            }
+            &.variation-3 {
+              width: 23rem;
+              vertical-align: 0;
+            }
             &:first-of-type {
               margin-right: 1.5vw;
             }
@@ -112,6 +156,9 @@ div.shop-main-view {
         tr {
           td {
             width: 22rem !important;
+            &.wider-than-tall {
+              width: 27rem !important;
+            }
           }
         }
       }
