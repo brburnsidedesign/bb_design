@@ -260,25 +260,69 @@ div.individual-sale-piece {
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 1100px) {
   div.individual-sale-piece {
     div.inner-shop-indiv {
       width: 95%;
       max-width: 65rem;
       margin: 0 auto;
       div.indiv-shop-text {
-        padding-top: 14vh;
         float: left;
         width: 40%;
         margin: 0 auto;
       }
       div.indiv-item-pic {
-        margin-top: -3rem;
         width: 60%;
         float: right;
+        &.tall-indiv-pic {
+        }
+        &.wider-indiv-pic {
+        }
         img {
           max-width: 30rem;
           margin-left: 9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1100px) {
+  div.inner-shop-indiv {
+    width: 60rem !important;
+    div.indiv-item-pic {
+      &.wider-indiv-pic {
+        img {
+          margin-left: 4rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  div.individual-sale-piece {
+    div.inner-shop-indiv {
+      width: 95%;
+      margin: 0 auto;
+      padding-top: 8.5vh;
+      div.indiv-shop-text {
+        float: left;
+        width: 40%;
+        margin: 0 auto;
+      }
+      div.indiv-item-pic {
+        width: 60%;
+        float: right;
+        &.tall-indiv-pic {
+          margin-top: -7rem;
+        }
+        img {
+          max-width: 30rem;
+          margin-left: 9rem;
+        }
+        &.wider-indiv-pic {
+          margin-top: 1.5rem;
         }
       }
     }
@@ -291,16 +335,19 @@ div.individual-sale-piece {
       width: 95%;
       max-width: 45rem;
       margin: 0 auto;
-      padding-top: 3vh;
+      padding-top: 8vh;
       div.indiv-shop-text {
         float: left;
-        padding-top: 10vh;
         width: 40%;
       }
       div.indiv-item-pic {
-        margin-top: -3rem;
         width: 60%;
         float: right;
+        &.tall-indiv-pic {
+          margin-top: -7rem;
+        }
+        &.wider-indiv-pic {
+        }
         img {
           width: 25rem;
           margin: 0 4rem;
@@ -312,6 +359,11 @@ div.individual-sale-piece {
 
 @media (max-width: 767px) {
   div.individual-sale-piece {
-
+    div.indiv-item-pic {
+      &.wider-indiv-pic {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
   }
 }
