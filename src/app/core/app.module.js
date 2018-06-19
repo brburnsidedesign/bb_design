@@ -110,6 +110,10 @@ app.config(['$urlRouterProvider', '$stateProvider',
           url					: '/shop/item/tubes',
           templateUrl : '/app/shop/item/tubesMain.html'
       })
+      .state('arches', {
+          url					: '/shop/item/arches',
+          templateUrl : '/app/shop/item/archesMain.html'
+      })
       .state('about', {
           url					: '/about',
           templateUrl : '/app/about/aboutView.html'
