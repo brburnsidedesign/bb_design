@@ -58,6 +58,9 @@ div.shop-main-view {
               }
             }
           }
+          &:hover {
+            opacity: 0.6;
+          }
         }
 
       }
@@ -149,7 +152,8 @@ div.shop-main-view {
             &.variation-3 {
               width: 23rem;
               &.knucks-main-view {
-                width: 18rem !important;
+                margin-left: 1.5rem !important;
+                width: 15rem !important;
               }
               &.last-item-second-row {
                 width: 27rem !important;
@@ -160,9 +164,6 @@ div.shop-main-view {
             }
             &:last-of-type {
               margin-left: 1.5vw;
-            }
-            &:hover {
-              opacity: 0.6;
             }
           }
         }
@@ -193,6 +194,10 @@ div.shop-main-view {
               &.last-item-second-row {
                 margin-top: -2.5rem !important;
                 margin-bottom: -5rem !important;
+              }
+              &.knucks-main-view {
+                height: 15rem !important;
+                width: 15rem !important;
               }
             }
           }

@@ -42,6 +42,8 @@ div.shop-main-view {
                 background-image: url("/assets/img/arches_main.jpg"); }
               div.shop-main-view div.inner-shop-main table tr td a div.item-5 {
                 background-image: url("/assets/img/more_is_more_main.jpg"); }
+          div.shop-main-view div.inner-shop-main table tr td:hover {
+            opacity: 0.6; }
     div.shop-main-view div.inner-shop-main hr {
       width: 90%;
       max-width: 50rem;
@@ -102,15 +104,14 @@ div.shop-main-view {
       div.shop-main-view div.inner-shop-main table tr td.variation-3 {
         width: 23rem; }
         div.shop-main-view div.inner-shop-main table tr td.variation-3.knucks-main-view {
-          width: 18rem !important; }
+          margin-left: 1.5rem !important;
+          width: 15rem !important; }
         div.shop-main-view div.inner-shop-main table tr td.variation-3.last-item-second-row {
           width: 27rem !important; }
       div.shop-main-view div.inner-shop-main table tr td:first-of-type {
         margin-right: 1.5vw; }
       div.shop-main-view div.inner-shop-main table tr td:last-of-type {
-        margin-left: 1.5vw; }
-      div.shop-main-view div.inner-shop-main table tr td:hover {
-        opacity: 0.6; } }
+        margin-left: 1.5vw; } }
 
 @media (max-width: 991px) {
   div.shop-main-view div.inner-shop-main table tr td {
@@ -126,7 +127,10 @@ div.shop-main-view {
       margin-bottom: 3rem !important; }
       div.shop-main-view div.inner-shop-main table tr td.variation-3.last-item-second-row {
         margin-top: -2.5rem !important;
-        margin-bottom: -5rem !important; } }
+        margin-bottom: -5rem !important; }
+      div.shop-main-view div.inner-shop-main table tr td.variation-3.knucks-main-view {
+        height: 15rem !important;
+        width: 15rem !important; } }
 
 @media (max-height: 750px) {
   div.shop-main-view div.inner-shop-main hr {
