@@ -201,6 +201,8 @@ div.individual-sale-piece {
     div.individual-sale-piece div.inner-shop-indiv div.indiv-item-pic {
       width: 60%;
       float: right; }
+      div.individual-sale-piece div.inner-shop-indiv div.indiv-item-pic.arches-indiv-pic {
+        margin-top: -8rem !important; }
       div.individual-sale-piece div.inner-shop-indiv div.indiv-item-pic img {
         max-width: 30rem;
         margin-left: 9rem; } }
@@ -209,7 +211,9 @@ div.individual-sale-piece {
   div.inner-shop-indiv {
     width: 60rem !important; }
     div.inner-shop-indiv div.indiv-item-pic.wider-indiv-pic img {
-      margin-left: 4rem !important; } }
+      margin-left: 4rem !important; }
+    div.inner-shop-indiv div.indiv-item-pic.arches-indiv-pic {
+      margin-top: -8rem !important; } }
 
 @media (min-width: 991px) {
   div.individual-sale-piece div.inner-shop-indiv {
@@ -249,6 +253,8 @@ div.individual-sale-piece {
       float: right; }
       div.individual-sale-piece div.inner-shop-indiv div.indiv-item-pic.tall-indiv-pic {
         margin-top: -7rem; }
+      div.individual-sale-piece div.inner-shop-indiv div.indiv-item-pic.arches-indiv-pic {
+        margin-top: -8rem !important; }
       div.individual-sale-piece div.inner-shop-indiv div.indiv-item-pic img {
         width: 25rem;
         margin: 0 4rem; } }
@@ -256,4 +262,10 @@ div.individual-sale-piece {
 @media (max-width: 767px) {
   div.individual-sale-piece div.indiv-item-pic.wider-indiv-pic {
     margin-top: 2rem;
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+  div.individual-sale-piece div.indiv-item-pic.more-is-more-indiv {
+    margin-top: 1rem;
+    margin-bottom: 3rem; }
+  div.individual-sale-piece div.indiv-item-pic.arches-indiv-pic {
+    margin-top: -4rem !important;
+    margin-bottom: -5.5rem !important; } }

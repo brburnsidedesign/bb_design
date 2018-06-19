@@ -300,9 +300,8 @@ div.individual-sale-piece {
       div.indiv-item-pic {
         width: 60%;
         float: right;
-        &.tall-indiv-pic {
-        }
-        &.wider-indiv-pic {
+        &.arches-indiv-pic {
+          margin-top: -8rem !important;
         }
         img {
           max-width: 30rem;
@@ -321,6 +320,9 @@ div.individual-sale-piece {
         img {
           margin-left: 4rem !important;
         }
+      }
+      &.arches-indiv-pic {
+        margin-top: -8rem !important;
       }
     }
   }
@@ -378,7 +380,8 @@ div.individual-sale-piece {
         &.tall-indiv-pic {
           margin-top: -7rem;
         }
-        &.wider-indiv-pic {
+        &.arches-indiv-pic {
+          margin-top: -8rem !important;
         }
         img {
           width: 25rem;
@@ -395,6 +398,14 @@ div.individual-sale-piece {
       &.wider-indiv-pic {
         margin-top: 2rem;
         margin-bottom: 3rem;
+      }
+      &.more-is-more-indiv {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+      }
+      &.arches-indiv-pic {
+        margin-top: -4rem !important;
+        margin-bottom: -5.5rem !important;
       }
     }
   }
