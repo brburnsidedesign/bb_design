@@ -25,8 +25,12 @@ div.shop-main-view {
           width: 20rem;
           height: 35rem;
           margin: 0;
-          &.wider-than-tall, &.variation-3 {
+          &.variation-3 {
             height: 23rem;
+          }
+          &.wider-than-tall {
+            height: 20rem;
+            margin-top: 1.5rem !important;
           }
           a {
             width: 100%;

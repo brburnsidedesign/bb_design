@@ -18,8 +18,11 @@ div.shop-main-view {
           width: 20rem;
           height: 35rem;
           margin: 0; }
-          div.shop-main-view div.inner-shop-main table tr td.wider-than-tall, div.shop-main-view div.inner-shop-main table tr td.variation-3 {
+          div.shop-main-view div.inner-shop-main table tr td.variation-3 {
             height: 23rem; }
+          div.shop-main-view div.inner-shop-main table tr td.wider-than-tall {
+            height: 20rem;
+            margin-top: 1.5rem !important; }
           div.shop-main-view div.inner-shop-main table tr td a {
             width: 100%;
             height: 100%; }
