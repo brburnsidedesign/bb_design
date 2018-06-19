@@ -49,6 +49,9 @@ div.shop-main-view {
               &.item-4 {
                 background-image: url('/assets/img/arches_main.jpg');
               }
+              &.item-5 {
+                background-image: url('/assets/img/more_is_more_main.jpg');
+              }
             }
           }
         }
@@ -177,6 +180,10 @@ div.shop-main-view {
             &.variation-3 {
               margin-top: 0 !important;
               margin-bottom: 3rem !important;
+              &.last-item-second-row {
+                margin-top: -2.5rem !important;
+                margin-bottom: -3rem !important;
+              }
             }
           }
         }
@@ -338,6 +345,9 @@ div.individual-sale-piece {
         float: right;
         &.tall-indiv-pic {
           margin-top: -7rem;
+        }
+        &.more-is-more-indiv {
+          margin-top: 1.5rem;
         }
         img {
           max-width: 30rem;

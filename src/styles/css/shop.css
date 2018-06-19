@@ -37,6 +37,8 @@ div.shop-main-view {
                 background-image: url("/assets/img/tubes_main.jpg"); }
               div.shop-main-view div.inner-shop-main table tr td a div.item-4 {
                 background-image: url("/assets/img/arches_main.jpg"); }
+              div.shop-main-view div.inner-shop-main table tr td a div.item-5 {
+                background-image: url("/assets/img/more_is_more_main.jpg"); }
     div.shop-main-view div.inner-shop-main hr {
       width: 90%;
       max-width: 50rem;
@@ -114,7 +116,10 @@ div.shop-main-view {
       width: 22rem !important; }
     div.shop-main-view div.inner-shop-main table tr td.variation-3 {
       margin-top: 0 !important;
-      margin-bottom: 3rem !important; } }
+      margin-bottom: 3rem !important; }
+      div.shop-main-view div.inner-shop-main table tr td.variation-3.last-item-second-row {
+        margin-top: -2.5rem !important;
+        margin-bottom: -3rem !important; } }
 
 @media (max-height: 750px) {
   div.shop-main-view div.inner-shop-main hr {
@@ -222,6 +227,8 @@ div.individual-sale-piece {
       float: right; }
       div.individual-sale-piece div.inner-shop-indiv div.indiv-item-pic.tall-indiv-pic {
         margin-top: -7rem; }
+      div.individual-sale-piece div.inner-shop-indiv div.indiv-item-pic.more-is-more-indiv {
+        margin-top: 1.5rem; }
       div.individual-sale-piece div.inner-shop-indiv div.indiv-item-pic img {
         max-width: 30rem;
         margin-left: 9rem; }
